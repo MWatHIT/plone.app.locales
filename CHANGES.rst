@@ -1,8 +1,108 @@
 Changelog
 =========
 
-5.0.8 (unreleased)
+5.0.11 (unreleased)
+-------------------
+
+- German: Change the querystring criteria group from "Daten" to "Datum".
+  It's right, that "Daten" is the plural of "Datum".
+  But the naming is misleading and means the same like the english "data".
+  [thet]
+
+- German: Change "Ort" to "Path" for translations indicating the hierarchical location of some content.
+  Fixes: #117
+  [thet]
+
+- Minor German updates.
+  [thet]
+
+- Updated Tranditional Chinese translations.
+  [l34marr]
+
+- Updated italian translation.
+  [keul]
+
+
+5.0.10 (2016-06-27)
+-------------------
+
+- Updated French translation.
+
+- Updated Traditional Chinese translations.
+  [l34marr]
+
+- Updated basque translations [erral]
+
+- Updated Dutch translations.  [maurits, fredvd]
+
+- Updated Language-Codes in po file headers.  These headers are not
+  used in Plone to determine the language: that is done by inspecting
+  the directory name.  But the i18ndude script uses the Language-Code
+  header when printing statistics.  Several were set to ``en`` or to
+  for example ``zh_CN`` (as the directory name should be) instead of
+  ``zh-cn`` (as the language code should be).  [maurits]
+
+- Update German translations.
+  [staeff]
+
+- Fix typo in portuguese.
+  https://github.com/collective/plone.app.locales/issues/112
+  [staeff]
+
+- Update German translations.
+  [chrimba]
+
+- Update Traditional Chinese translations.
+  [l34marr]
+
+- Fix typos in it translation
+  [ale-rt]
+
+- Update Japanese translations for plone.po.
+  [terapyon]
+
+- Add russian translate Date and Time Settings, Language Settings and much more in control panel.
+  Full Russian translation frontpafe.po
+  Translation mocap and widgets
+  [serge73]
+
+- add label_schema_default and translate in Japanese
+  [terapyon]
+
+
+5.0.9 (2016-03-02)
 ------------------
+
+- Update Japanese translations for widgets.po.
+  [terapyon]
+
+
+5.0.8 (2016-03-01)
+------------------
+
+- Fix vietnamese error in label_filed_under message.
+
+- Updated it translations
+  [ale-rt]
+
+- Updated es translation
+  [jpgimenez]
+
+- Updated eu translation
+  [erral]
+
+- Updated da_DK translation for registered notify welcome screen.
+  [tmog]
+
+- Updated RU translations.
+  Сorrection of translation Tuesday Thursday June July
+  [serge73]
+
+- Updated da_DK translations.
+  [tmog]
+
+- Fix typo: Fenter -> Fenster
+  [agitator]
 
 - Fix typo: shoudl -> should
   [ale-rt]

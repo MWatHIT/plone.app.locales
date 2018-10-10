@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: en\n"
+"Language-Code: de\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8\n"
 "Domain: widgets\n"
@@ -489,7 +489,7 @@ msgstr "Öffnen"
 
 #: ./patterns/tinymce/pattern.js
 msgid "Open in new window"
-msgstr "In einem neuem Fenter öffnen"
+msgstr "In einem neuem Fenster öffnen"
 
 #: ./patterns/tinymce/pattern.js
 msgid "Open in parent window / frame"
@@ -537,7 +537,7 @@ msgstr "Designvorschau"
 
 #: ./patterns/livesearch/pattern.js
 msgid "Previous"
-msgstr "Nächste"
+msgstr "Zurück"
 
 #: ./patterns/structure/js/views/textfilter.js
 msgid "Query"

@@ -2,12 +2,13 @@
 # Alberto Serrano <alb.serrano@gmail.com>, 2004-2015
 # Pedro A. Gracia Fajardo <pedro@neuroomante.com>, 2002-2004
 # Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2015.
+# Juan Pablo Giménez <jpg@rosario.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2015-10-25 23:15+0100\n"
-"Last-Translator: Alberto Serrano <alb.serrano@gmail.com>\n"
+"PO-Revision-Date: 2016-02-18 17:00-0300\n"
+"Last-Translator: Juan Pablo Giménez <jpg@rosario.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -48,7 +49,7 @@ msgstr "$m minutos"
 msgid "${action/title}"
 msgstr "${action/title}"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:110
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:146
 msgid "${items} could not be found"
 msgstr "${items} no encontrados"
 
@@ -60,7 +61,7 @@ msgstr "${name} no es un nombre válido. Los siguientes caracteres no son válid
 msgid "${name} is reserved."
 msgstr "${name} está reservado."
 
-#: CMFPlone/RegistrationTool.py:206
+#: CMFPlone/RegistrationTool.py:205
 msgid "${sentances}. ${sentance}"
 msgstr "${sentances}. ${sentance}"
 
@@ -68,11 +69,15 @@ msgstr "${sentances}. ${sentance}"
 msgid "${text_logged_out_link} and click 'Cancel' when prompted with an authentication prompt."
 msgstr "${text_logged_out_link} y haga clic en 'Cancelar' cuando se le solicite la autenticación."
 
-#: plone.app.content/plone/app/content/browser/actions.py:255
+#: plone.app.content/plone/app/content/browser/contents/copy.py:41
+msgid "${title} cannot be copied."
+msgstr ""
+
+#: plone.app.content/plone/app/content/browser/actions.py:259
 msgid "${title} copied."
 msgstr "${title} copiado."
 
-#: plone.app.content/plone/app/content/browser/actions.py:230
+#: plone.app.content/plone/app/content/browser/actions.py:234
 msgid "${title} cut."
 msgstr "${title} cortado."
 
@@ -80,7 +85,15 @@ msgstr "${title} cortado."
 msgid "${title} has been deleted."
 msgstr "${title} ha sido eliminado."
 
-#: plone.app.content/plone/app/content/browser/actions.py:218
+#: plone.app.content/plone/app/content/browser/contents/cut.py:45
+msgid "${title} is being edited and can not be cut."
+msgstr ""
+
+#: plone.app.content/plone/app/content/browser/contents/cut.py:41
+msgid "${title} is being edited and cannot be cut."
+msgstr ""
+
+#: plone.app.content/plone/app/content/browser/actions.py:222
 msgid "${title} is locked and cannot be cut."
 msgstr "${title} está bloqueado y no puede ser cortado."
 
@@ -88,11 +101,11 @@ msgstr "${title} está bloqueado y no puede ser cortado."
 msgid "${title} is locked and cannot be deleted."
 msgstr "${title} está bloqueado y no puede ser eliminado."
 
-#: plone.app.content/plone/app/content/browser/actions.py:251
+#: plone.app.content/plone/app/content/browser/actions.py:255
 msgid "${title} is not copyable."
 msgstr "${title} no puede ser copiado."
 
-#: plone.app.content/plone/app/content/browser/actions.py:225
+#: plone.app.content/plone/app/content/browser/actions.py:229
 msgid "${title} is not moveable."
 msgstr "${title} no puede ser movido."
 
@@ -108,7 +121,7 @@ msgstr ""
 msgid "(Unstyled)"
 msgstr "(Sin estilo)"
 
-#: plone/app/theming/browser/controlpanel.pt:131
+#: plone/app/theming/browser/controlpanel.pt:132
 msgid "(active)"
 msgstr "(activo)"
 
@@ -158,7 +171,7 @@ msgstr "Un registro de configuración similar a 'Mozilla about:config'"
 msgid "A TALES expression condition makes the rule apply only if TALES expression is not False in context."
 msgstr "Una expresión TALES de condición hace que la regla sea aplicada sólo si la expresión TALES no es Falsa en el contexto."
 
-#: plone/app/theming/browser/controlpanel.py:288
+#: plone/app/theming/browser/controlpanel.py:294
 msgid "A boilerplate rules.xml was added to your theme, but no index.html file found. Update rules.xml to reference the current theme file."
 msgstr "Se ha añadido a su tema un archivo rules.xml modelo, pero no se ha encontrado un archivo index.html. Actualice el archivo rules.xml para hacer referencia al archivo del tema actual."
 
@@ -166,11 +179,11 @@ msgstr "Se ha añadido a su tema un archivo rules.xml modelo, pero no se ha enco
 msgid "A classic portlet allows you to use legacy portlet templates."
 msgstr "Un portlet clásico le permite utilizar plantillas heredadas de portlets."
 
-#: plone.app.discussion/plone/app/discussion/comment.py:349
+#: plone.app.discussion/plone/app/discussion/comment.py:341
 msgid "A comment has been posted."
 msgstr "Comentario añadido."
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:142
+#: plone.app.discussion/plone/app/discussion/interfaces.py:141
 msgid "A comment id unique to this conversation"
 msgstr "Un comentario de ID exclusivo para esta conversación"
 
@@ -339,7 +352,7 @@ msgstr "Acciones"
 msgid "Actions portlet"
 msgstr "Portlet de acciones"
 
-#: plone/app/theming/browser/controlpanel.pt:157
+#: plone/app/theming/browser/controlpanel.pt:158
 msgid "Activate"
 msgstr "Activar"
 
@@ -452,7 +465,7 @@ msgstr "Agregar Condición de Estado de Flujo de trabajo"
 msgid "Add Workflow Transition Condition"
 msgstr "Agregar Condición de Transición de Flujo de trabajo"
 
-#: plone.app.discussion/plone/app/discussion/browser/comments.py:62
+#: plone.app.discussion/plone/app/discussion/browser/comments.py:66
 msgid "Add a comment"
 msgstr "Añadir un comentario"
 
@@ -488,39 +501,43 @@ msgstr "Configuración de Productos Adicionales"
 msgid "Add-ons"
 msgstr "Complementos"
 
-#: plone.app.dexterity/plone/app/dexterity/configure.zcml:38
+#: plone.app.versioningbehavior/plone/app/versioningbehavior/configure.zcml:71
+msgid "Adds CMFEditions support for Dexterity."
+msgstr ""
+
+#: plone.app.dexterity/plone/app/dexterity/configure.zcml:36
 msgid "Adds Dexterity-based Folder and Document types for testing."
 msgstr ""
 
-#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:34
+#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:36
 msgid "Adds a table of contents"
 msgstr ""
 
-#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:43
+#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:46
 msgid "Adds collection behavior"
 msgstr ""
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:40
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:44
 msgid "Adds creator, contributor, and rights fields."
 msgstr ""
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:33
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:36
 msgid "Adds effective date and expiration date fields."
 msgstr ""
 
-#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:17
+#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:18
 msgid "Adds image and image caption fields"
 msgstr ""
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:26
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:28
 msgid "Adds keywords and language fields."
 msgstr ""
 
-#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:52
+#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:56
 msgid "Adds richtext behavior"
 msgstr ""
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:51
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:56
 msgid "Adds standard metadata fields (equals Basic metadata + Categorization + Effective range + Ownership)"
 msgstr ""
 
@@ -536,11 +553,11 @@ msgstr "Añade soporte para mostrar formularios z3c.form en Plone"
 msgid "Adds the ability to be referenced by Archetypes items"
 msgstr ""
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:19
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:20
 msgid "Adds title and description fields."
 msgstr ""
 
-#: plone.app.iterate/plone/app/iterate/configure.zcml:23
+#: plone.app.iterate/plone/app/iterate/configure.zcml:22
 msgid "Adds working copy support (aka. in-place staging) to Plone."
 msgstr "Añade soporte de copia de trabajo (modificaciones in situ) a Plone."
 
@@ -550,7 +567,7 @@ msgstr "Añade soporte de copia de trabajo (modificaciones in situ) a Plone."
 msgid "Advanced"
 msgstr "Avanzado"
 
-#: plone/app/theming/browser/controlpanel.pt:329
+#: plone/app/theming/browser/controlpanel.pt:330
 msgid "Advanced settings"
 msgstr "Configuración Avanzada"
 
@@ -606,7 +623,7 @@ msgstr "Todo el contenido"
 msgid "Allow anyone to view 'about' information"
 msgstr "Permite que cualquiera vea la información 'acerca de'"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:95
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:110
 #: plone.app.dexterity/plone/app/dexterity/behaviors/discussion.py:30
 msgid "Allow discussion"
 msgstr "Permitir comentarios"
@@ -615,7 +632,7 @@ msgstr "Permitir comentarios"
 msgid "Allow discussion for this content object."
 msgstr "Permitir comentarios para este tipo de contenido"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:95
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:110
 msgid "Allow discussion on this item"
 msgstr ""
 
@@ -623,11 +640,11 @@ msgstr ""
 msgid "Allow external login sites"
 msgstr "Permitir sitios externos de inicio de sesión"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:81
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:90
 msgid "Allow items to be excluded from navigation"
 msgstr "Permitir elementos excluidos de la navegación"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:88
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:102
 msgid "Allow items to have next previous navigation enabled"
 msgstr "Permite a los elementos tener habilitada la navegación siguiente/anterior"
 
@@ -675,10 +692,6 @@ msgstr "Formatos alternativos"
 msgid "Always"
 msgstr "Siempre"
 
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/News_Item.xml
-msgid "An announcement that will show up in news listings."
-msgstr "Un anuncio que será mostrado en los listados de noticias."
-
 #: plone/app/theming/browser/theme-error.pt:12
 msgid "An error occurred trying to parse the rules file:"
 msgstr "Ha ocurrido un error al intentar analizar el archivo de reglas:"
@@ -696,6 +709,9 @@ msgstr "El tipo de un elemento (ej. Evento)"
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "An item's workflow state (e.g.published)"
 msgstr "El estado de flujo de trabajo de un elemento (ej. publicado)"
+
+msgid "Anonymous"
+msgstr "Anónimo"
 
 #: plone.app.discussion/plone/app/discussion/browser/controlpanel.py:69
 msgid "Anonymous Comments"
@@ -786,11 +802,14 @@ msgstr "AtD URL de servicio"
 msgid "Auth cookie length"
 msgstr "Longitud de la cookie de autenticación"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:58
+msgid "Authenticated"
+msgstr "Autenticado"
+
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:64
 msgid "Automatically generate short URL name for content based on its initial title"
 msgstr "Genera automáticamente un URL con base en el título del contenido"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:65
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:72
 msgid "Automatically generate short URL name for content based on its primary field file name"
 msgstr "Genera automáticamente un URL con base en el nombre del archivo"
 
@@ -830,7 +849,7 @@ msgstr "Volver al Formulario de Migración"
 msgid "Base configuration"
 msgstr "Configuración base"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:19
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:20
 msgid "Basic metadata"
 msgstr "Metadatos básicos"
 
@@ -861,14 +880,18 @@ msgstr "Antes del día actual"
 msgid "Before today"
 msgstr "Antes de hoy"
 
-#: plone.app.dexterity/plone/app/dexterity/browser/behaviors.py:55
+#: plone.app.dexterity/plone/app/dexterity/browser/behaviors.py:81
 #: plone.app.dexterity/plone/app/dexterity/browser/layout.py:16
 msgid "Behaviors"
 msgstr "Comportamientos"
 
-#: plone.app.dexterity/plone/app/dexterity/browser/behaviors.py:57
+#: plone.app.dexterity/plone/app/dexterity/browser/behaviors.py:83
 msgid "Behaviors successfully updated."
 msgstr "Los comportamientos se actualizaron exitosamente."
+
+#: plone.app.widgets/plone/app/widgets/configure.zcml:33
+msgid "Better widgets for Plone"
+msgstr ""
 
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Between dates"
@@ -895,7 +918,7 @@ msgstr "Por defecto, todos los elementos creados a nivel de la raíz del sitio a
 msgid "By default, any content item in the root of the portal will appear as a tab. If you turn this option off, only folders will be shown. This only has an effect if 'Automatically generate tabs' is enabled."
 msgstr "Por defecto, cualquier elemento de contenido en la raíz del portal aparecerá como una pestaña. Si desactiva esta opción, sólo se mostrarán las carpetas. Esto sólo tiene efecto si la opción de 'Generar pestañas automáticamente' está habilitada."
 
-#: CMFPlone/interfaces/resources.py:21
+#: CMFPlone/interfaces/resources.py:23
 msgid "CSS/LESS files"
 msgstr "Archivos CSS/LESS"
 
@@ -903,7 +926,7 @@ msgstr "Archivos CSS/LESS"
 msgid "Caching proxies"
 msgstr ""
 
-#: plone.app.content/plone/app/content/browser/contents/rearrange.py:62
+#: plone.app.content/plone/app/content/browser/contents/rearrange.py:72
 msgid "Can not rearrange folder"
 msgstr "No es posible reorganizar la carpeta"
 
@@ -930,11 +953,11 @@ msgstr "Cancelar retirada de versión"
 msgid "Cancel checkout"
 msgstr "Cancelar retirada de versión"
 
-#: plone.app.iterate/plone/app/iterate/browser/checkout.py:70
+#: plone.app.iterate/plone/app/iterate/browser/checkout.py:66
 msgid "Cannot find checkout location"
 msgstr "No ha podido encontrarse la ubicación para la retirada de versión"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:182
+#: plone.app.discussion/plone/app/discussion/interfaces.py:181
 msgid "Captcha"
 msgstr ""
 
@@ -946,7 +969,7 @@ msgstr "Tenga precaución, es posible que alguien esté aprovechando una vulnera
 msgid "Cascading rule"
 msgstr "Regla en cascada"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:26
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:28
 msgid "Categorization"
 msgstr ""
 
@@ -974,11 +997,11 @@ msgstr "Cambios aplicados."
 
 #: CMFPlone/controlpanel/browser/language.py:47
 #: CMFPlone/controlpanel/browser/types.py:73
-#: plone.app.registry/plone/app/registry/browser/controlpanel.py:70
+#: plone.app.registry/plone/app/registry/browser/controlpanel.py:72
 msgid "Changes canceled."
 msgstr "Cambios cancelados."
 
-#: plone/app/theming/browser/controlpanel.py:103
+#: plone/app/theming/browser/controlpanel.py:112
 msgid "Changes cancelled"
 msgstr "Cambios cancelados"
 
@@ -989,7 +1012,7 @@ msgid "Changes made."
 msgstr "Cambios realizados."
 
 #: CMFPlone/controlpanel/browser/types.py:67
-#: plone.app.discussion/plone/app/discussion/browser/controlpanel.py:83
+#: plone.app.discussion/plone/app/discussion/browser/controlpanel.py:85
 #: plone.app.portlets/plone/app/portlets/browser/formhelper.py:183
 msgid "Changes saved"
 msgstr "Cambios guardados"
@@ -1011,7 +1034,7 @@ msgid "Check in"
 msgstr "Guardar nueva versión"
 
 #. Default: "Check out"
-#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:62
+#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:73
 #: plone.app.iterate/plone/app/iterate/profiles/default/actions.xml
 msgid "Check out"
 msgstr "Retirar versión"
@@ -1020,19 +1043,19 @@ msgstr "Retirar versión"
 msgid "Check this box if you want this field to be required."
 msgstr ""
 
-#: plone.app.iterate/plone/app/iterate/browser/checkout.py:82
+#: plone.app.iterate/plone/app/iterate/browser/checkout.py:81
 msgid "Check-out created"
 msgstr "Versión retirada"
 
-#: plone.app.iterate/plone/app/iterate/browser/checkin.py:52
+#: plone.app.iterate/plone/app/iterate/browser/checkin.py:55
 msgid "Checked in"
 msgstr "Nueva versión guardada"
 
-#: plone.app.iterate/plone/app/iterate/browser/cancel.py:51
+#: plone.app.iterate/plone/app/iterate/browser/cancel.py:54
 msgid "Checkout cancelled"
 msgstr "Retirada de versión cancelada"
 
-#: plone.app.iterate/plone/app/iterate/interfaces.py:304
+#: plone.app.iterate/plone/app/iterate/interfaces.py:325
 msgid "Checkout workflow policy"
 msgstr "Política de flujo de trabajo para retirada"
 
@@ -1044,11 +1067,15 @@ msgstr "Seleccione la CSS usada en el Área del Editor WYSIWYG"
 msgid "Classic portlet"
 msgstr "Portlet clásico"
 
-#: plone/app/theming/browser/controlpanel.pt:169
+#: plone.app.widgets/plone/app/widgets/utils.py:72
+msgid "Clear"
+msgstr "Limpiar"
+
+#: plone/app/theming/browser/controlpanel.pt:170
 msgid "Clear Cache"
 msgstr "Limpiar Caché"
 
-#: plone.app.content/plone/app/content/browser/contents/rearrange.py:53
+#: plone.app.content/plone/app/content/browser/contents/rearrange.py:63
 msgid "Client/server ordering mismatch"
 msgstr "Incompatibilidad en petición cliente/servidor"
 
@@ -1062,7 +1089,7 @@ msgstr "Clonar tipo de contenido"
 
 #. Default: "Collection"
 #: plone.app.collection/plone/app/collection/profiles/default/types/Collection.xml
-#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:43
+#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:46
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/Collection.xml
 msgid "Collection"
 msgstr "Colección"
@@ -1076,7 +1103,7 @@ msgstr "Colección de información que admite búsqueda"
 msgid "Collection portlet"
 msgstr "Portlet de colección"
 
-#: CMFPlone/interfaces/resources.py:32
+#: CMFPlone/interfaces/resources.py:34
 msgid "Comma separated values of resource for shim"
 msgstr "Valores separados por coma del recurso para la cuña"
 
@@ -1096,23 +1123,19 @@ msgstr ""
 msgid "Comment about the last transition"
 msgstr "Comentarios sobre la última transición"
 
-#: plone.app.discussion/plone/app/discussion/contentrules.zcml:11
-msgid "Comment added"
-msgstr ""
-
-#: plone.app.discussion/plone/app/discussion/browser/moderation.py:182
+#: plone.app.discussion/plone/app/discussion/browser/moderation.py:185
 msgid "Comment approved."
 msgstr "Comentario aprobado."
 
-#: plone.app.discussion/plone/app/discussion/contentrules.py:98
+#: plone.app.discussion/plone/app/discussion/contentrules.py:101
 msgid "Comment author email"
 msgstr ""
 
-#: plone.app.discussion/plone/app/discussion/contentrules.py:86
+#: plone.app.discussion/plone/app/discussion/contentrules.py:89
 msgid "Comment author full name"
 msgstr ""
 
-#: plone.app.discussion/plone/app/discussion/contentrules.py:74
+#: plone.app.discussion/plone/app/discussion/contentrules.py:77
 msgid "Comment author user name"
 msgstr ""
 
@@ -1120,23 +1143,11 @@ msgstr ""
 msgid "Comment deleted."
 msgstr "Comentario eliminado."
 
-#: plone.app.discussion/plone/app/discussion/contentrules.py:50
+#: plone.app.discussion/plone/app/discussion/contentrules.py:53
 msgid "Comment id"
 msgstr ""
 
-#: plone.app.discussion/plone/app/discussion/contentrules.zcml:17
-msgid "Comment removed"
-msgstr ""
-
-#: plone.app.discussion/plone/app/discussion/contentrules.zcml:23
-msgid "Comment reply added"
-msgstr ""
-
-#: plone.app.discussion/plone/app/discussion/contentrules.zcml:29
-msgid "Comment reply removed"
-msgstr ""
-
-#: plone.app.discussion/plone/app/discussion/contentrules.py:62
+#: plone.app.discussion/plone/app/discussion/contentrules.py:65
 msgid "Comment text"
 msgstr ""
 
@@ -1148,11 +1159,11 @@ msgstr ""
 msgid "Commenter Image"
 msgstr "Imagen del autor"
 
-#: plone.app.discussion/plone/app/discussion/configure.zcml:43
+#: plone.app.discussion/plone/app/discussion/configure.zcml:42
 msgid "Commenting infrastructure for Plone"
 msgstr ""
 
-#: plone.app.discussion/plone/app/discussion/contentrules.py:49
+#: plone.app.discussion/plone/app/discussion/contentrules.py:52
 msgid "Comments"
 msgstr ""
 
@@ -1186,7 +1197,7 @@ msgstr "Condición bajada."
 msgid "Condition moved up."
 msgstr "Condición subida."
 
-#: CMFPlone/interfaces/resources.py:67
+#: CMFPlone/interfaces/resources.py:70
 msgid "Conditional comment"
 msgstr "Comentario condicional"
 
@@ -1195,7 +1206,7 @@ msgstr "Comentario condicional"
 msgid "Configuration Registry"
 msgstr "Registro de Configuración"
 
-#: CMFPlone/interfaces/resources.py:40
+#: CMFPlone/interfaces/resources.py:42
 msgid "Configuration in JSON for the widget"
 msgstr "Configuración en JSON para el widget"
 
@@ -1221,7 +1232,7 @@ msgstr "Configurar regla"
 msgid "Configure, enable, disable, debug and build Plone JavaScript/LESS/CSS resources. Plone utilizes RequireJS and LESS CSS to build its resources. Re-building a Plone bundle TTW requires a modern web browser."
 msgstr "Configurar, habilitar, deshabilitar, depurar y construir recursos JavaScript/LESS/CSS de Plone. Plone utiliza RequireJS y LESS CSS para construir sus recursos. Reconstruir un paquete de Plone a través de la web requiere un navegador web moderno."
 
-#: plone.app.dexterity/plone/app/dexterity/configure.zcml:29
+#: plone.app.dexterity/plone/app/dexterity/configure.zcml:27
 msgid "Configures various components needed for full Dexterity support."
 msgstr "Configura diversos componentes necesarios para soporte completo de Dexterity"
 
@@ -1296,6 +1307,10 @@ msgstr "Las reglas de contenido han sido deshabilitadas de forma global"
 msgid "Content rules has been globally enabled"
 msgstr "Las reglas de contenido han sido habilitadas de forma global"
 
+#: plone.formwidget.contenttree/plone/formwidget/contenttree/configure.zcml:32
+msgid "Content tree widget"
+msgstr ""
+
 #: plone.app.contentrules/plone/app/contentrules/conditions/configure.zcml:41
 #: plone.app.contentrules/plone/app/contentrules/conditions/portaltype.py:26
 msgid "Content type"
@@ -1326,18 +1341,18 @@ msgstr "Correos electrónicos de Colaboradores"
 msgid "Contributors Ids"
 msgstr "Ids de Colaboradores"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:137
+#: plone.app.discussion/plone/app/discussion/interfaces.py:136
 msgid "Conversation"
 msgstr "Conversación"
 
 #. Default: "Copy"
 #: CMFPlone/profiles/default/actions.xml
-#: plone.app.content/plone/app/content/browser/contents/copy.py:26
-#: plone/app/theming/browser/controlpanel.pt:177
+#: plone.app.content/plone/app/content/browser/contents/copy.py:23
+#: plone/app/theming/browser/controlpanel.pt:178
 msgid "Copy"
 msgstr "Copiar"
 
-#: plone.app.content/plone/app/content/browser/actions.py:276
+#: plone.app.content/plone/app/content/browser/actions.py:280
 msgid "Copy or cut one or more items to paste."
 msgstr "Copie o corte uno o más elementos para pegarlos."
 
@@ -1370,7 +1385,7 @@ msgid "Could not transition: ${title}"
 msgstr "No se ha podido transicionar: ${title}"
 
 #: plone.app.layout/plone/app/layout/viewlets/content.py:381
-#: plone/app/theming/browser/controlpanel.pt:239
+#: plone/app/theming/browser/controlpanel.pt:240
 msgid "Create"
 msgstr "Crear"
 
@@ -1386,16 +1401,17 @@ msgstr "Crear un sitio Plone"
 msgid "Create a new Plone site"
 msgstr "Crear un nuevo sitio Plone"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:167
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:185
 msgid "Created on"
 msgstr "Creado el"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:175
+#: plone.app.discussion/plone/app/discussion/interfaces.py:174
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Creation date"
 msgstr "Fecha de creación"
 
 #. Default: "Creator"
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:186
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Creator"
 msgstr "Creador"
@@ -1454,7 +1470,7 @@ msgstr "Panel de control de migración de tipos personalizados"
 
 #. Default: "Cut"
 #: CMFPlone/profiles/default/actions.xml
-#: plone.app.content/plone/app/content/browser/contents/cut.py:27
+#: plone.app.content/plone/app/content/browser/contents/cut.py:23
 msgid "Cut"
 msgstr "Cortar"
 
@@ -1487,11 +1503,11 @@ msgid "Date of the most recent public comment"
 msgstr "Fecha del comentario más reciente público"
 
 #. Default: "Date range"
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:33
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:36
 msgid "Date range"
 msgstr "Rango de fechas"
 
-#: CMFPlone/interfaces/resources.py:57
+#: CMFPlone/interfaces/resources.py:59
 msgid "Date time of the last compilation of this bundle"
 msgstr "Fecha y hora de la última compilación de este paquete"
 
@@ -1507,7 +1523,7 @@ msgstr "Día"
 msgid "Days of object history to keep after packing"
 msgstr "Días del histórico de un objeto a mantener tras la compactación"
 
-#: plone/app/theming/browser/controlpanel.pt:163
+#: plone/app/theming/browser/controlpanel.pt:164
 msgid "Deactivate"
 msgstr "Desactivar"
 
@@ -1560,7 +1576,7 @@ msgstr "Opciones de sindicación por defecto"
 msgid "Default timezone"
 msgstr "Zona horaria por defecto"
 
-#: CMFPlone/interfaces/resources.py:107
+#: CMFPlone/interfaces/resources.py:111
 msgid "Define list of modules that will be defined empty on RequireJS build steps to prevent loading modules multiple times."
 msgstr ""
 
@@ -1612,7 +1628,7 @@ msgstr ""
 msgid "Dependencies"
 msgstr "Dependencias"
 
-#: CMFPlone/interfaces/resources.py:31
+#: CMFPlone/interfaces/resources.py:33
 msgid "Dependencies for shim"
 msgstr "Dependencias de la cuña"
 
@@ -1624,17 +1640,17 @@ msgstr "En función del número de arquetipos en su portal, puede que la migraci
 msgid "Depending of the number of archetypes in your portal, it may take a <strong>really</strong> long time for the migration to be done. Stay calm, be patient and check your logs for progress-information."
 msgstr "En función del número de arquetipos en su portal, puede que la migración dure <strong>mucho</strong> tiempo. Tenga paciencia y compruebe sus logs para más información sobre el progreso de la migración."
 
-#: CMFPlone/interfaces/resources.py:92
+#: CMFPlone/interfaces/resources.py:96
 msgid "Depends on another bundle"
 msgstr "Depende de otro paquete"
 
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:187
 #: plone.app.dexterity/plone/app/dexterity/interfaces.py:57
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
-#: plone.contentrules/plone/contentrules/rule/interfaces.py:103
 msgid "Description"
 msgstr "Descripción"
 
-#: plone.portlet.static/plone/portlet/static/static.py:54
+#: plone.portlet.static/plone/portlet/static/static.py:64
 msgid "Details link"
 msgstr "Enlace con detalles"
 
@@ -1654,19 +1670,23 @@ msgstr "Determina si su Plone está optimizado para sitios grandes o pequeños. 
 msgid "Determines if your Plone is optimized for small or large sites. In environments with a lot of users it can be very slow or impossible to build a list all users. This option tunes the user interface and behaviour of Plone for this case by allowing you to search for users instead of listing all of them."
 msgstr "Determina si su Plone está optimizado para sitios grandes o pequeños. En entornos con muchos usuarios puede ser muy lento o incluso imposible el construir una lista con todos los usuarios. Esta opción optimiza el interfaz de usuario y el comportamiento de Plone para este caso permitiéndole buscar por usuarios en lugar de listarlos todos."
 
-#: CMFPlone/interfaces/resources.py:102
+#: CMFPlone/interfaces/resources.py:106
 msgid "Develop CSS"
 msgstr "Programar CSS"
 
-#: CMFPlone/interfaces/resources.py:98
+#: CMFPlone/interfaces/resources.py:102
 msgid "Develop JavaScript"
 msgstr "Programar JavaScript"
 
 #: plone.app.dexterity/plone/app/dexterity/browser/types.py:238
-#: plone.app.dexterity/plone/app/dexterity/configure.zcml:29
-#: plone.app.dexterity/plone/app/dexterity/profiles/default/actions.xml
+#: plone.app.dexterity/plone/app/dexterity/configure.zcml:27
+#: plone.app.dexterity/plone/app/dexterity/profiles/default/controlpanel.xml
 msgid "Dexterity Content Types"
 msgstr "Tipos de contenido Dexterity"
+
+#: plone.app.versioningbehavior/plone/app/versioningbehavior/configure.zcml:71
+msgid "Dexterity versioning support"
+msgstr ""
 
 #: plone/app/theming/configure.zcml:33
 msgid "Diazo theme support"
@@ -1688,6 +1708,10 @@ msgstr "Desactivado"
 msgid "Disabling locking here will only affect users editing content through the Plone web UI.  Content edited via WebDAV clients will still be subject to locking."
 msgstr "La deshabilitación del bloqueo sólo afectará a los usuarios que editen el contenido a través del interfaz de usuario web de Plone. El contenido editado a través de clientes WebDAV seguirá sujeto al bloqueo."
 
+#: plone.app.content/plone/app/content/browser/contents/paste.py:56
+msgid "Disallowed subobject type \"${type}\""
+msgstr ""
+
 #: plone.app.discussion/plone/app/discussion/profiles/default/controlpanel.xml
 msgid "Discussion"
 msgstr ""
@@ -1698,7 +1722,6 @@ msgid "Discussion Item"
 msgstr "Elemento de Discusión"
 
 #. Default: "Discussion Items are documents which reply to other content.They should *not* be addable through the standard 'folder_factories' interface."
-#: CMFPlone/profiles/default/types/Discussion_Item.xml
 #: portal type description of type with title Discussion Item
 msgid "Discussion Items are documents which reply to other content.They should *not* be addable through the standard 'folder_factories' interface."
 msgstr "Los elementos de Debate son documentos que dan réplica a otro contenido. *No* deberían ser agregables a través del interfaz estándar 'folder_factories'"
@@ -1731,7 +1754,7 @@ msgstr "Doctype"
 msgid "Does not match current password."
 msgstr "No coincide con la contraseña actual."
 
-#: CMFPlone/interfaces/resources.py:85
+#: CMFPlone/interfaces/resources.py:89
 msgid "Does your bundle contains any RequireJS or LESS file?"
 msgstr "¿Contiene su paquete algún archivo RequireJS o LESS?"
 
@@ -1740,9 +1763,7 @@ msgid "Domains"
 msgstr ""
 
 #. Default: "Download"
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/File.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Image.xml
-#: plone/app/theming/browser/controlpanel.pt:261
+#: plone/app/theming/browser/controlpanel.pt:262
 msgid "Download"
 msgstr "Descargar"
 
@@ -1758,11 +1779,11 @@ msgstr "Ejecutar en modo de prueba"
 msgid "Dublin Core"
 msgstr "Dublin Core"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:51
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:56
 msgid "Dublin Core metadata"
 msgstr "Metadatos Dublin Core"
 
-#: plone/app/theming/browser/controlpanel.py:351
+#: plone/app/theming/browser/controlpanel.py:356
 msgid "Duplicate title"
 msgstr "Título duplicado"
 
@@ -1881,7 +1902,7 @@ msgstr "Editar Condición de Transición de Flujo de trabajo"
 msgid "Edit an existing rule."
 msgstr "Editar una regla existente."
 
-#: plone.app.discussion/plone/app/discussion/browser/controlpanel.py:89
+#: plone.app.discussion/plone/app/discussion/browser/controlpanel.py:91
 #: plone.directives.form/plone/directives/form/form.py:228
 msgid "Edit cancelled"
 msgstr "Edición cancelada"
@@ -1939,7 +1960,7 @@ msgstr "Fecha efectiva"
 msgid "Effective range"
 msgstr "Rango efectivo"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:154
+#: plone.app.discussion/plone/app/discussion/interfaces.py:153
 #: plone.schema/plone/schema/editor.py:22
 msgid "Email"
 msgstr "Correo electrónico"
@@ -1989,7 +2010,7 @@ msgstr "Habilitar Carpetas de Usuario"
 msgid "Enable auto resizing of the editor window."
 msgstr "Habilitar redimensionamiento automático de la ventana del editor."
 
-#: plone.app.iterate/plone/app/iterate/interfaces.py:297
+#: plone.app.iterate/plone/app/iterate/interfaces.py:318
 msgid "Enable checkout workflow"
 msgstr "Habilitar flujo de trabajo para retiradas"
 
@@ -2001,7 +2022,7 @@ msgstr "Habilitar comprobaciones de integridad de enlaces"
 msgid "Enable locking for through-the-web edits"
 msgstr "Habilitar el bloqueo para ediciones a través del interfaz web"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:107
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:123
 msgid "Enable next previous navigation for all items of this type"
 msgstr "Habilitar la navegación siguiente/anterior para todos los elementos de este tipo"
 
@@ -2032,6 +2053,10 @@ msgstr "Habilitado por defecto"
 msgid "Enables the LiveSearch feature, which shows live results if the browser supports JavaScript."
 msgstr "Habilita la característica LiveSearch, que muestra resultados en tiempo real si el navegador soporta JavaScript."
 
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:189
+msgid "End Date"
+msgstr ""
+
 #: CMFPlone/interfaces/controlpanel.py:508
 msgid "Enter a JSON-formatted style format configuration. A format is for example the style that get applied when you press the bold button inside the editor. See http://www.tinymce.com/wiki.php/Configuration:formats"
 msgstr "Introduzca una configuración de formato de estilo en formato JSON. Un formato es, por ejemplo, el estilo que se aplica cuando presiona el botón negrita en el editor. Vea http://www.tinymce.com/wiki.php/Configuration:formats"
@@ -2056,9 +2081,21 @@ msgstr "Introduzca una lista de los complementos personalizados que serán carga
 msgid "Enter allowed choices one per line."
 msgstr ""
 
+#: plone.app.widgets/plone/app/widgets/utils.py:70
+msgid "Enter date..."
+msgstr ""
+
+#: plone.app.widgets/plone/app/widgets/utils.py:83
+msgid "Enter time..."
+msgstr ""
+
 #: plone.app.users/plone/app/users/browser/passwordpanel.py:72
 msgid "Enter your new password. ${errors}"
 msgstr "Introduzca su nueva contraseña. ${errors}"
+
+#: plone.app.widgets/plone/app/widgets/utils.py:132
+msgid "Entire site"
+msgstr ""
 
 #: CMFPlone/interfaces/controlpanel.py:768
 msgid "Entity encoding"
@@ -2080,11 +2117,11 @@ msgstr "Igual a"
 msgid "Error"
 msgstr "Error"
 
-#: plone.app.content/plone/app/content/browser/contents/rearrange.py:23
+#: plone.app.content/plone/app/content/browser/contents/rearrange.py:33
 msgid "Error moving item"
 msgstr "Error al mover elemento"
 
-#: plone.app.content/plone/app/content/browser/contents/rename.py:101
+#: plone.app.content/plone/app/content/browser/contents/rename.py:107
 msgid "Error renaming ${title}"
 msgstr "Error al renombrar ${title}"
 
@@ -2127,7 +2164,6 @@ msgstr "Estimación"
 
 #. Default: "Event"
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/Event.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Event.xml
 msgid "Event"
 msgstr "Evento"
 
@@ -2140,7 +2176,6 @@ msgid "Event start date"
 msgstr "Fecha de inicio de evento"
 
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/Event.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Event.xml
 msgid "Events can be shown in calendars."
 msgstr "Los eventos pueden ser mostrados en calendarios."
 
@@ -2151,7 +2186,7 @@ msgstr "Contenido de ejemplo"
 msgid "Excel spreadsheet"
 msgstr "Libro Excel"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:81
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:90
 msgid "Exclude From navigation"
 msgstr "Excluir de la navegación"
 
@@ -2163,7 +2198,7 @@ msgstr "Excluir al autor de los destinatarios"
 msgid "Exclude the Current Context"
 msgstr "Excluir el Contexto Actual"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:172
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:190
 msgid "Excluded from navigation"
 msgstr "Excluídos de la navegación"
 
@@ -2171,6 +2206,7 @@ msgstr "Excluídos de la navegación"
 msgid "Execute transition ${transition}"
 msgstr "Ejecutar transición ${transition}"
 
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:191
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Expiration date"
 msgstr "Fecha de caducidad"
@@ -2183,7 +2219,7 @@ msgstr "Exportar los modelos del esquema"
 msgid "Export Type Profiles"
 msgstr "Exportar los perfiles del tipo"
 
-#: CMFPlone/interfaces/resources.py:36
+#: CMFPlone/interfaces/resources.py:38
 msgid "Export vars for shim"
 msgstr "Exportar variables para la cuña"
 
@@ -2203,7 +2239,7 @@ msgstr "Expone las propiedades Dublin Core como metaetiquetas."
 msgid "Exposes your content as a file according to the sitemaps.org standard. You can submit this to compliant search engines like Google, Yahoo and Microsoft. It allows these search engines to more intelligently crawl your site."
 msgstr "Expone su contenido como un archivo según los estándares de sitemaps.org. Puede enviarlo a motores de búsqueda que soporten este estándar como Google, Yahoo y Microsoft. Permite a estos motores de búsqueda examinar su sitio de forma más inteligente."
 
-#: CMFPlone/interfaces/resources.py:61
+#: CMFPlone/interfaces/resources.py:63
 msgid "Expression to render"
 msgstr "Expresión a mostrar"
 
@@ -2216,14 +2252,12 @@ msgid "Extension profile for plone.app.referenceablebehavior"
 msgstr ""
 
 #: CMFPlone/profiles.zcml:30
-#: plone.app.iterate/plone/app/iterate/configure.zcml:32
+#: plone.app.iterate/plone/app/iterate/configure.zcml:45
 msgid "Extension profile to configure a test fixture"
 msgstr ""
 
 #. Default: "External Edit"
 #: CMFPlone/profiles/default/types/Discussion_Item.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Document.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Event.xml
 msgid "External Edit"
 msgstr "Edición Externa"
 
@@ -2252,11 +2286,11 @@ msgstr "Id de aplicación Facebook"
 msgid "Facebook username"
 msgstr "Nombre de usuario de Facebook"
 
-#: plone.app.content/plone/app/content/browser/contents/copy.py:35
+#: plone.app.content/plone/app/content/browser/contents/copy.py:32
 msgid "Failed to copy items"
 msgstr "Error al copiar elementos"
 
-#: plone.app.content/plone/app/content/browser/contents/cut.py:36
+#: plone.app.content/plone/app/content/browser/contents/cut.py:32
 msgid "Failed to cut items"
 msgstr "Error al cortar elementos"
 
@@ -2268,15 +2302,15 @@ msgstr "Error al eliminar elementos"
 msgid "Failed to modify items"
 msgstr "Error al modificar elementos"
 
-#: plone.app.content/plone/app/content/browser/contents/tags.py:42
+#: plone.app.content/plone/app/content/browser/contents/tags.py:40
 msgid "Failed to modify tags on items"
 msgstr "Error al modificar etiquetas de elementos"
 
-#: plone.app.content/plone/app/content/browser/contents/paste.py:33
+#: plone.app.content/plone/app/content/browser/contents/paste.py:32
 msgid "Failed to paste items"
 msgstr "Error al pegar elementos"
 
-#: plone.app.content/plone/app/content/browser/contents/rename.py:44
+#: plone.app.content/plone/app/content/browser/contents/rename.py:48
 msgid "Failed to rename all items"
 msgstr "Error al renombrar todos los elementos"
 
@@ -2284,11 +2318,11 @@ msgstr "Error al renombrar todos los elementos"
 msgid "Failed to set default page"
 msgstr "Error al establecer la página por defecto"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:42
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:75
 msgid "Failure"
 msgstr "Error"
 
-#: plone.app.content/plone/app/content/browser/contents/properties.py:44
+#: plone.app.content/plone/app/content/browser/contents/properties.py:42
 msgid "Failure updating metadata"
 msgstr "Error al actualizar metadatos"
 
@@ -2319,7 +2353,6 @@ msgstr ""
 
 #. Default: "File"
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/File.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/File.xml
 msgid "File"
 msgstr "Archivo"
 
@@ -2327,7 +2360,7 @@ msgstr "Archivo"
 msgid "File Extension"
 msgstr "Extensión de Archivo"
 
-#: plone.namedfile/plone/namedfile/editor.py:37
+#: plone.namedfile/plone/namedfile/editor.py:39
 msgid "File Upload"
 msgstr "Subida de Archivo"
 
@@ -2383,20 +2416,15 @@ msgid "Find the collection which provides the items to list"
 msgstr "Busque la colección que proporciona los elementos a listar"
 
 #. Default: "Folder"
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:171
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:194
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/Folder.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Folder.xml
+#: plone.app.dexterity/plone/app/dexterity/profiles/testing/types/Folder.xml
 msgid "Folder"
 msgstr "Carpeta"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:118
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:135
 msgid "Folder Addable Constrains"
 msgstr ""
-
-#. Default: "Folder Listing"
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Folder.xml
-msgid "Folder Listing"
-msgstr "Listado de la Carpeta"
 
 #: plone.stringinterp/plone/stringinterp/adapters.py:83
 msgid "Folder URL"
@@ -2459,7 +2487,7 @@ msgstr "Generar pestañas para los elementos que no sean carpetas."
 msgid "Get the raw value as an encoded string"
 msgstr "Obtener el valor en crudo como una cadena codificada"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:127
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:145
 msgid "Gives the ability to rename an item from its edit form."
 msgstr ""
 
@@ -2532,7 +2560,7 @@ msgstr "Eche un vistazo arriba para más información."
 msgid "Header styles"
 msgstr "Estilos de cabecera"
 
-#: plone/app/theming/browser/controlpanel.pt:108
+#: plone/app/theming/browser/controlpanel.pt:109
 msgid "Help"
 msgstr "Ayuda"
 
@@ -2550,8 +2578,7 @@ msgstr "Ocultar el contenido dentro de los siguientes tipos en la Navegación"
 
 #. Default: "History"
 #: CMFPlone/profiles/default/actions.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Document.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Event.xml
+#: plone.stringinterp/plone/stringinterp/adapters.py:654
 msgid "History"
 msgstr "Histórico"
 
@@ -2575,7 +2602,7 @@ msgstr "Hora"
 msgid "How many items to list."
 msgstr "Cuántos elementos a listar."
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:164
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:193
 msgid "ID"
 msgstr "ID"
 
@@ -2583,7 +2610,7 @@ msgstr "ID"
 msgid "Icon visibility"
 msgstr "Visibilidad de iconos"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:180
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:255
 #: plone.stringinterp/plone/stringinterp/adapters.py:567
 msgid "Id"
 msgstr "Id"
@@ -2592,7 +2619,7 @@ msgstr "Id"
 msgid "Id $id is already in use"
 msgstr "El id $id ya está en uso"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:145
+#: plone.app.discussion/plone/app/discussion/interfaces.py:144
 msgid "Id of comment this comment is in reply to"
 msgstr "ID del comentario este comentario es en respuesta a"
 
@@ -2632,11 +2659,11 @@ msgstr "Si está habilitado, los elementos se seleccionarán de forma aleatoria 
 msgid "If enabled, the listing will not include the current item the portlet is rendered for if it otherwise would be."
 msgstr "Si está habilitado, el listado no incluirá al elemento actual para el que se está mostrando el portlet."
 
-#: plone.portlet.static/plone/portlet/static/static.py:55
+#: plone.portlet.static/plone/portlet/static/static.py:65
 msgid "If given, the header and footer will link to this URL."
 msgstr "Si se proporciona, la cabecera y el pie serán un enlace a este URL."
 
-#: CMFPlone/interfaces/resources.py:86
+#: CMFPlone/interfaces/resources.py:90
 msgid "If its true and you modify this bundle you need to build it before production"
 msgstr "Si es cierto y modifica este paquete, necesita construirlo antes de pasarlo a producción"
 
@@ -2669,8 +2696,7 @@ msgstr "Si envió el elemento por error, o desea realizar ediciones adicionales,
 
 #. Default: "Image"
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/Image.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Image.xml
-#: plone.namedfile/plone/namedfile/editor.py:38
+#: plone.namedfile/plone/namedfile/editor.py:40
 msgid "Image"
 msgstr "Imagen"
 
@@ -2688,11 +2714,10 @@ msgid "Image objects"
 msgstr "Objetos de Imagen"
 
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/Image.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Image.xml
 msgid "Images can be referenced in pages or displayed in an album."
 msgstr "Las imágenes pueden ser referenciadas en páginas o mostradas en un álbum."
 
-#: plone/app/theming/browser/controlpanel.pt:756
+#: plone/app/theming/browser/controlpanel.pt:757
 msgid "Import"
 msgstr "Importar"
 
@@ -2713,17 +2738,21 @@ msgstr "Importante"
 msgid "Imported successfully."
 msgstr ""
 
-#: CMFPlone/interfaces/resources.py:62
-msgid "In case its a bundle we can have a condition to render it"
-msgstr "En caso de que sea un paquete, podemos establecer una condición para mostrarlo"
+#: CMFPlone/interfaces/resources.py:64
+msgid "In case its a bundle we can have a condition to render it (it does not apply if the bundle is merged)."
+msgstr ""
 
-#: CMFPlone/interfaces/resources.py:93
+#: CMFPlone/interfaces/resources.py:97
 msgid "In case you want to be the last: *, in case its the first should be empty"
 msgstr "En caso de que desee que sea el último: *, en caso de que sea el primero, debería estar vacío"
 
-#: CMFPlone/interfaces/resources.py:68
-msgid "In case you want to render this resource on conditional comment"
-msgstr "En caso de que desee mostrar este recurso en un comentario condicional"
+#: CMFPlone/interfaces/resources.py:71
+msgid "In case you want to render this resource on conditional comment (it does not apply if the bundle is merged)."
+msgstr ""
+
+#: CMFPlone/interfaces/resources.py:120
+msgid "In production mode, bundles are merged together to reduce the quantity of JS and CSS resources loaded by the browser. Choose 'default' if this bundle must be available for all the visitors, choose 'logged-in' if it must be available for logged-in users only, or leave it empty if it must not be merged."
+msgstr ""
 
 #: CMFPlone/interfaces/controlpanel.py:1418
 msgid "Include meta tags on pages to give hints to social media on how to render your pages better when shared"
@@ -2744,7 +2773,7 @@ msgstr "Índice usado para ordenar las pestañas"
 msgid "Info"
 msgstr "Información"
 
-#: CMFPlone/interfaces/resources.py:27
+#: CMFPlone/interfaces/resources.py:29
 msgid "Init instruction for shim"
 msgstr "Instrucción de inicio para la cuña"
 
@@ -2756,7 +2785,7 @@ msgstr "Estilos en línea"
 msgid "Input format"
 msgstr "Formato de entrada"
 
-#: plone/app/theming/browser/controlpanel.pt:269
+#: plone/app/theming/browser/controlpanel.pt:270
 msgid "Inspect theme"
 msgstr "Inspeccionar tema"
 
@@ -2780,6 +2809,10 @@ msgstr "Instalando un complemento de terceros"
 #: plone/app/theming/configure.zcml:33
 msgid "Installs a control panel to allow on-the-fly theming with Diazo"
 msgstr "Instala un panel de control para permitir la aplicación de temas al vuelo con Diazo"
+
+#: plone.formwidget.datetime/plone/formwidget/datetime/configure.zcml:25
+msgid "Installs the package"
+msgstr ""
 
 #. Default: "Integer value or range"
 #: criterion description of criterion ATSimpleIntCriterion
@@ -2807,11 +2840,11 @@ msgstr "Flujo de trabajo de Intranet para Carpetas"
 msgid "Intranet/Extranet Workflow"
 msgstr "Flujo de trabajo de Intranet/Extranet"
 
-#: CMFPlone/RegistrationTool.py:485
+#: CMFPlone/RegistrationTool.py:484
 msgid "Invalid email address."
 msgstr "Dirección de correo no válida."
 
-#: plone.namedfile/plone/namedfile/field.py:23
+#: plone.namedfile/plone/namedfile/field.py:26
 msgid "Invalid image file"
 msgstr "Archivo de imagen no válido"
 
@@ -2836,7 +2869,7 @@ msgstr "Está dentro de (relativo)"
 msgid "It can be in the side vertical mode or in the top horizontal mode"
 msgstr "Puede estar en el modo vertical lateral o en el modo horizontal superior"
 
-#: CMFPlone/interfaces/resources.py:80
+#: CMFPlone/interfaces/resources.py:84
 msgid "It's enabled?"
 msgstr "¿Está habilitado?"
 
@@ -2845,7 +2878,7 @@ msgstr "¿Está habilitado?"
 msgid "Item state changed."
 msgstr "Ha cambiado el estado del elemento"
 
-#: plone.app.content/plone/app/content/browser/actions.py:304
+#: plone.app.content/plone/app/content/browser/actions.py:308
 msgid "Item(s) pasted."
 msgstr "Elemento(s) pegado(s)"
 
@@ -2857,7 +2890,7 @@ msgstr "Elementos a mostrar en su estado de flujo de trabajo."
 msgid "Items of this type will be able to contain other items."
 msgstr "Los elementos de este tipo serán capaces de contener otros elementos."
 
-#: plone.app.content/plone/app/content/browser/contents/rename.py:43
+#: plone.app.content/plone/app/content/browser/contents/rename.py:47
 msgid "Items renamed"
 msgstr "Elementos renombrados"
 
@@ -2891,7 +2924,7 @@ msgstr "Palabras clave"
 msgid "Language"
 msgstr "Idioma"
 
-#: Archetypes/ExtensibleMetadata.py:353
+#: Archetypes/ExtensibleMetadata.py:352
 msgid "Language neutral"
 msgstr "Neutral respecto al idioma"
 
@@ -2904,15 +2937,15 @@ msgstr "Neutral respecto al idioma (configuración del sitio por defecto)"
 msgid "Larger than"
 msgstr "Mayor que"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:174
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:195
 msgid "Last comment date"
 msgstr "Fecha de último comentario"
 
-#: CMFPlone/interfaces/resources.py:56
+#: CMFPlone/interfaces/resources.py:58
 msgid "Last compiled date"
 msgstr "Fecha de última compilación"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:165
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:197
 msgid "Last modified"
 msgstr "Última modificación"
 
@@ -2920,13 +2953,9 @@ msgstr "Última modificación"
 msgid "Latest available configuration"
 msgstr "Última configuración disponible"
 
-#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:17
+#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:18
 msgid "Lead Image"
 msgstr ""
-
-#: CMFPlone/browser/templates/hero.pt:13
-msgid "Learn more about Plone"
-msgstr "Aprenda más sobre Plone"
 
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 #: plone.app.querystring/plone/app/querystring/profiles/upgrades/to_6/registry.xml
@@ -2942,7 +2971,6 @@ msgid "Lets you control how navigation is constructed in your site. Note that to
 msgstr "Le permite controlar cómo se construye la navegación en su sitio. Tenga en cuenta que para controlar cómo se muestra el árbol de navegación debe ir a 'Administrar portlets', en la raíz del sitio (o allí donde un portlet de árbol de navegación haya sido agregado), y cambiar esta opción directamente."
 
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/File.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/File.xml
 msgid "Lets you upload a file to the site."
 msgstr "Le permite subir un archivo al sitio."
 
@@ -2958,17 +2986,12 @@ msgstr "Limitar Resultados de Búsqueda"
 
 #. Default: "Link"
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/Link.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Link.xml
 msgid "Link"
 msgstr "Enlace"
 
 #: plone.app.portlets/plone/app/portlets/portlets/rss.py:244
 msgid "Link of the RSS feed to display."
 msgstr "Enlace de la fuente RSS a mostrar."
-
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Link.xml
-msgid "Links to an internal or external resource."
-msgstr "Enlaza a un recurso interno o externo."
 
 #. Default: "List of values"
 #: criterion description of criterion ATListCriterion
@@ -2979,7 +3002,7 @@ msgstr "Lista de valores"
 msgid "Load all profiles from other packages/products that are needed for a full Plone site."
 msgstr ""
 
-#: CMFPlone/interfaces/resources.py:73
+#: CMFPlone/interfaces/resources.py:77
 msgid "Loaded resources"
 msgstr "Recursos cargados"
 
@@ -2992,6 +3015,7 @@ msgid "Local configuration for plone.protect"
 msgstr ""
 
 #. Default: "Location"
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:196
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 #: plone.app.querystring/plone/app/querystring/profiles/upgrades/to_5/registry.xml
 msgid "Location"
@@ -3017,11 +3041,11 @@ msgstr "Ubicación en la estructura de navegación"
 msgid "Location in the site structure"
 msgstr "Ubicación en la estructura del sitio"
 
-#: plone.app.lockingbehavior/plone/app/lockingbehavior/configure.zcml:16
+#: plone.app.lockingbehavior/plone/app/lockingbehavior/configure.zcml:17
 msgid "Locking"
 msgstr ""
 
-#: plone.app.lockingbehavior/plone/app/lockingbehavior/configure.zcml:16
+#: plone.app.lockingbehavior/plone/app/lockingbehavior/configure.zcml:17
 msgid "Locking support for dexterity"
 msgstr ""
 
@@ -3085,7 +3109,7 @@ msgstr "Nombre de inicio de sesión no encontrado."
 msgid "Logout"
 msgstr "Cerrar sesión"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:159
+#: plone.app.discussion/plone/app/discussion/interfaces.py:158
 #: plone.app.textfield/plone/app/textfield/interfaces.py:57
 msgid "MIME type"
 msgstr "Tipo MIME"
@@ -3115,16 +3139,16 @@ msgstr "Correo"
 msgid "Mail Settings"
 msgstr "Opciones de Correo"
 
-#: CMFPlone/browser/author.py:129
+#: CMFPlone/browser/author.py:130
 #: CMFPlone/browser/sendto.py:103
 msgid "Mail sent."
 msgstr "Correo enviado."
 
-#: CMFPlone/RegistrationTool.py:327
+#: CMFPlone/RegistrationTool.py:326
 msgid "Mailing forgotten passwords has been disabled."
 msgstr "El envío de contraseñas olvidadas ha sido deshabilitado."
 
-#: CMFPlone/interfaces/resources.py:17
+#: CMFPlone/interfaces/resources.py:19
 msgid "Main js file"
 msgstr "Archivo js principal"
 
@@ -3140,7 +3164,7 @@ msgstr "Mantenimiento"
 msgid "Maintenance Settings"
 msgstr "Opciones de Mantenimiento"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:74
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:82
 msgid "Make all items of this type a navigation root"
 msgstr "Marcar todos los elementos de este tipo como raíz de la navegación"
 
@@ -3296,6 +3320,10 @@ msgstr "Correos electrónicos de Miembros"
 msgid "Menu listing Zope3 views registered for use as dynamic views                    on CMF Content. Currently the only purpose of this menu is                    the registration of user-visible titles for these views"
 msgstr ""
 
+#: CMFPlone/interfaces/resources.py:119
+msgid "Merge with"
+msgstr ""
+
 #: plone.app.contentrules/plone/app/contentrules/actions/logger.py:37
 #: plone.app.contentrules/plone/app/contentrules/actions/mail.py:51
 #: plone.app.contentrules/plone/app/contentrules/actions/notify.py:21
@@ -3340,7 +3368,7 @@ msgstr "Migrando contenido traducido con LinguaPlone"
 msgid "Migrating default-content that was extended with archetypes.schemaextender"
 msgstr "Migrando contenido por defecto que ha sido extendido con archetypes.schemaextender"
 
-#: plone.app.contenttypes/plone/app/contenttypes/migration/custom_migration.py:298
+#: plone.app.contenttypes/plone/app/contenttypes/migration/custom_migration.py:299
 msgid "Migrating to this content type is impossible with this configuration"
 msgstr "No puede migrarse a este tipo de contenido con esta configuración"
 
@@ -3372,11 +3400,11 @@ msgstr "Falta la acción de configuración de sindicación."
 msgid "Moderate comments"
 msgstr ""
 
-#: plone.app.discussion/plone/app/discussion/browser/controlpanel.py:72
+#: plone.app.discussion/plone/app/discussion/browser/controlpanel.py:71
 msgid "Moderator Email Notification"
 msgstr "Notificación al moderador por correo electrónico"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:176
+#: plone.app.discussion/plone/app/discussion/interfaces.py:175
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Modification date"
 msgstr "Fecha de modificación"
@@ -3385,11 +3413,11 @@ msgstr "Fecha de modificación"
 msgid "Modify portlet"
 msgstr "Modificar portlet"
 
-#: plone.app.content/plone/app/content/browser/contents/properties.py:33
+#: plone.app.content/plone/app/content/browser/contents/properties.py:31
 msgid "Modify properties on items"
 msgstr "Modificar propiedades de elementos"
 
-#: plone/app/theming/browser/controlpanel.pt:266
+#: plone/app/theming/browser/controlpanel.pt:267
 msgid "Modify theme"
 msgstr "Modificar tema"
 
@@ -3446,16 +3474,16 @@ msgstr "Mi Carpeta"
 msgid "My Preferences"
 msgstr "Mis Preferencias"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:139
+#: plone.app.discussion/plone/app/discussion/interfaces.py:138
 #: plone/app/theming/interfaces.py:33
 msgid "Name"
 msgstr "Nombre"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:65
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:72
 msgid "Name from file name"
 msgstr "Nombre a partir del nombre del archivo"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:58
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:64
 msgid "Name from title"
 msgstr "Nombre a partir del título"
 
@@ -3498,7 +3526,7 @@ msgstr "Opciones de Navegación"
 msgid "Navigation path"
 msgstr "Ruta de navegación"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:74
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:82
 msgid "Navigation root"
 msgstr "Raíz de la navegación"
 
@@ -3519,7 +3547,7 @@ msgstr "Nueva regla de contenido creada. Por favor, añada las condiciones y acc
 msgid "New reference created."
 msgstr "Nueva referencia creada."
 
-#: plone/app/theming/browser/controlpanel.pt:95
+#: plone/app/theming/browser/controlpanel.pt:96
 msgid "New theme"
 msgstr "Nuevo tema"
 
@@ -3540,15 +3568,14 @@ msgstr "Noticias"
 
 #. Default: "News Item"
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/News_Item.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/News_Item.xml
 msgid "News Item"
 msgstr "Noticia"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:107
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:123
 msgid "Next previous navigation"
 msgstr "Navegación siguiente/anterior"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:88
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:102
 msgid "Next previous navigation toggle"
 msgstr "Cambiar navegación siguiente/próximo"
 
@@ -3569,7 +3596,7 @@ msgstr "Sin cambios"
 msgid "No changes made."
 msgstr "No se ha aplicado ningún cambio"
 
-#: plone.app.dexterity/plone/app/dexterity/browser/behaviors.py:58
+#: plone.app.dexterity/plone/app/dexterity/browser/behaviors.py:84
 msgid "No changes were made."
 msgstr "No se realizaron cambios."
 
@@ -3581,6 +3608,10 @@ msgstr "No hay contenido a migrar."
 #: CMFPlone/RegistrationTool.py:118
 msgid "No email address is registered for member: ${member_id}"
 msgstr "No se ha registrado una dirección de correo para el miembro: ${member_id}"
+
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/validator.py:9
+msgid "No file provided."
+msgstr "Archivo no especificado"
 
 #: plone.app.collection/plone/app/collection/browser/templates/thumbnail_view.pt:72
 msgid "No images found in this collection."
@@ -3598,12 +3629,12 @@ msgstr "No hay actualizaciones"
 msgid "No workflow"
 msgstr "Sin flujo de trabajo"
 
-#: plone.app.content/plone/app/content/browser/contents/rearrange.py:83
+#: plone.app.content/plone/app/content/browser/contents/rearrange.py:93
 msgid "Not explicit orderable"
 msgstr "No es ordenable explícitamente"
 
 #: CMFPlone/controlpanel/browser/usergroups_usersoverview.pt:57
-#: plone/app/theming/browser/controlpanel.pt:54
+#: plone/app/theming/browser/controlpanel.pt:55
 msgid "Note"
 msgstr "Nota"
 
@@ -3612,7 +3643,7 @@ msgstr "Nota"
 msgid "Note about how long it might take"
 msgstr "Nota sobre cuánto puede durar"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:168
+#: plone.app.discussion/plone/app/discussion/interfaces.py:167
 msgid "Notify me of new comments via email."
 msgstr "Recibir avisos por correo cuando haya nuevos comentarios."
 
@@ -3651,7 +3682,7 @@ msgstr "Libro ODS"
 msgid "ODT document"
 msgstr "Documento ODT"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:173
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:192
 msgid "Object Size"
 msgstr "Tamaño de Objeto"
 
@@ -3674,7 +3705,7 @@ msgstr "Objeto quitado de este contenedor"
 msgid "Ogg Audio"
 msgstr "Audio Ogg"
 
-#: plone.portlet.static/plone/portlet/static/static.py:40
+#: plone.portlet.static/plone/portlet/static/static.py:50
 msgid "Omit portlet border"
 msgstr "Omitir el borde del portlet"
 
@@ -3722,6 +3753,10 @@ msgstr "Pasos Opcionales de Migración"
 msgid "Optional plone.session refresh support."
 msgstr "Soporte opcional de refresco de plone.session."
 
+#: plone.session/plone/session/profiles.zcml:19
+msgid "Optional plone.session refresh support. [uninstall]"
+msgstr ""
+
 #. Default: "Order in folder"
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Order in folder"
@@ -3743,7 +3778,7 @@ msgstr "Propietario"
 msgid "Owners E-Mails"
 msgstr "Correos electrónicos de Propietarios"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:40
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:44
 msgid "Ownership"
 msgstr ""
 
@@ -3774,7 +3809,6 @@ msgstr "Base de datos compactada."
 
 #. Default: "Page"
 #: plone.app.contenttypes/plone/app/contenttypes/profiles/default/types/Document.xml
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Document.xml
 #: plone.app.dexterity/plone/app/dexterity/profiles/testing/types/Document.xml
 msgid "Page"
 msgstr "Página"
@@ -3783,7 +3817,7 @@ msgstr "Página"
 msgid "Parameter expressions"
 msgstr "Expresiones de parámetros"
 
-#: plone.app.iterate/plone/app/iterate/containers.py:64
+#: plone.app.iterate/plone/app/iterate/containers.py:65
 msgid "Parent folder"
 msgstr "Carpeta padre"
 
@@ -3817,7 +3851,7 @@ msgstr "Las contraseñas deben coincidir."
 
 #. Default: "Paste"
 #: CMFPlone/profiles/default/actions.xml
-#: plone.app.content/plone/app/content/browser/contents/paste.py:23
+#: plone.app.content/plone/app/content/browser/contents/paste.py:22
 msgid "Paste"
 msgstr "Pegar"
 
@@ -3857,12 +3891,12 @@ msgstr "Revisión pendiente"
 msgid "Perform a workflow transition on the triggering object"
 msgstr ""
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:98
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:134
 msgid "Permission denied for \"${title}\""
 msgstr "Permiso denegado para \"${title}\""
 
 #: plone.app.content/plone/app/content/browser/actions.py:148
-#: plone.app.content/plone/app/content/browser/contents/rename.py:67
+#: plone.app.content/plone/app/content/browser/contents/rename.py:71
 msgid "Permission denied to rename ${title}."
 msgstr "No tiene permisos para renombrar ${title}."
 
@@ -3894,6 +3928,14 @@ msgstr "Por favor, asegúrese de que tiene una copia de seguridad de su sitio an
 #: CMFPlone/skins/plone_scripts/check_id.py:52
 msgid "Please enter a name."
 msgstr "Por favor, introduzca un nombre."
+
+#: plone.formwidget.datetime/plone/formwidget/datetime/z3cform/interfaces.py:56
+msgid "Please enter a valid date and time."
+msgstr "Por favor, introduzca una fecha y hora válidas."
+
+#: plone.formwidget.datetime/plone/formwidget/datetime/z3cform/interfaces.py:52
+msgid "Please enter a valid date."
+msgstr "Por favor, introduzca una fecha válida."
 
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Please enter the number in days."
@@ -3965,20 +4007,8 @@ msgstr ""
 msgid "Plone Configuration"
 msgstr "Configuración de Plone"
 
-#: plone.app.discussion/plone/app/discussion/configure.zcml:43
+#: plone.app.discussion/plone/app/discussion/configure.zcml:42
 msgid "Plone Discussions"
-msgstr ""
-
-#: plone.app.contentmenu/plone/app/contentmenu/menu.py:889
-msgid "Plone Footerportlets"
-msgstr ""
-
-#: plone.app.contentmenu/plone/app/contentmenu/menu.py:889
-msgid "Plone Leftcolumn"
-msgstr ""
-
-#: plone.app.contentmenu/plone/app/contentmenu/menu.py:889
-msgid "Plone Rightcolumn"
 msgstr ""
 
 #. Default: "Plone Site"
@@ -3988,6 +4018,10 @@ msgstr "Sitio Plone"
 
 #: CMFPlone/profiles.zcml:30
 msgid "Plone Test Fixture"
+msgstr ""
+
+#: plone.app.widgets/plone/app/widgets/configure.zcml:33
+msgid "Plone Widgets"
 msgstr ""
 
 #: CMFPlone/interfaces/controlpanel.py:1335
@@ -4030,16 +4064,16 @@ msgstr "Zona horaria por defecto del portal"
 msgid "Portal title"
 msgstr "Título del Portal"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:132
+#: plone.app.discussion/plone/app/discussion/interfaces.py:131
 msgid "Portal type"
 msgstr "Tipo de objeto"
 
-#: plone.portlet.static/plone/portlet/static/static.py:49
+#: plone.portlet.static/plone/portlet/static/static.py:59
 msgid "Portlet footer"
 msgstr "Pie de Portlet"
 
 #: plone.portlet.collection/plone/portlet/collection/collection.py:38
-#: plone.portlet.static/plone/portlet/static/static.py:29
+#: plone.portlet.static/plone/portlet/static/static.py:39
 msgid "Portlet header"
 msgstr "Cabecera de Portlet"
 
@@ -4122,7 +4156,7 @@ msgstr "Promociona su elemento privado a estado de borrador público."
 msgid "Promotes your private item to an internal draft."
 msgstr "Promociona su elemento privado a estado de borrador interno."
 
-#: plone.app.content/plone/app/content/browser/contents/properties.py:28
+#: plone.app.content/plone/app/content/browser/contents/properties.py:26
 msgid "Properties"
 msgstr "Propiedades"
 
@@ -4149,7 +4183,7 @@ msgstr "Borrador Público"
 msgid "Public draft"
 msgstr "Borrador público"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:166
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:188
 msgid "Publication date"
 msgstr "Fecha de publicación"
 
@@ -4271,15 +4305,15 @@ msgid "Reader"
 msgstr "Lector"
 
 #: plone.stringinterp/plone/stringinterp/adapters.py:484
-msgid "Readers E-Nails"
-msgstr "Correos electrónicos de Lectores"
+msgid "Readers E-Mails"
+msgstr ""
 
 #: CMFPlone/profiles/dependencies/portlets.xml
 #: plone.app.portlets/plone/app/portlets/portlets/recent.py:32
 msgid "Recent items"
 msgstr "Elementos recientes"
 
-#: CMFPlone/RegistrationTool.py:391
+#: CMFPlone/RegistrationTool.py:390
 msgid "Recipient address rejected by server."
 msgstr "La dirección del destinatario ha sido rechazada por el servidor."
 
@@ -4338,7 +4372,7 @@ msgstr "Quitar"
 #. Default: "Rename"
 #: CMFPlone/profiles/default/actions.xml
 #: plone.app.content/plone/app/content/browser/actions.py:139
-#: plone.app.content/plone/app/content/browser/contents/rename.py:32
+#: plone.app.content/plone/app/content/browser/contents/rename.py:36
 msgid "Rename"
 msgstr "Renombrar"
 
@@ -4348,7 +4382,7 @@ msgstr "Renombrar"
 msgid "Rename items"
 msgstr "Renombar elementos"
 
-#: plone.app.content/plone/app/content/browser/actions.py:173
+#: plone.app.content/plone/app/content/browser/actions.py:177
 msgid "Renamed '${oldid}' to '${newid}'."
 msgstr "Renombrado '${oldid}' a '${newid}'."
 
@@ -4373,11 +4407,11 @@ msgstr "Tipos de Recurso"
 msgid "Resource bundles for themes"
 msgstr "Paquetes de recursos para temas"
 
-#: CMFPlone/interfaces/resources.py:76
+#: CMFPlone/interfaces/resources.py:80
 msgid "Resource name"
 msgstr "Nombre de recurso"
 
-#: CMFPlone/interfaces/resources.py:13
+#: CMFPlone/interfaces/resources.py:15
 msgid "Resources base URL"
 msgstr "URL base de recursos"
 
@@ -4387,7 +4421,7 @@ msgstr "URL base de recursos"
 msgid "Restart"
 msgstr "Reiniciar"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:118
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:135
 msgid "Restrict the content types that can be added to folderish content"
 msgstr ""
 
@@ -4432,7 +4466,7 @@ msgstr "Título de Estado de Revisión"
 msgid "Review list"
 msgstr "Lista de revisión"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:168
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:198
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Review state"
 msgstr "Estado de revisión"
@@ -4480,7 +4514,7 @@ msgstr "Correos electrónicos de Revisores"
 msgid "Rich Text"
 msgstr "Texto Enriquecido"
 
-#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:52
+#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:56
 msgid "RichText"
 msgstr ""
 
@@ -4549,7 +4583,7 @@ msgid "Search Settings"
 msgstr "Opciones de Búsqueda"
 
 #. Default: "Search for user or group"
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:47
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:52
 #: plone.app.workflow/plone/app/workflow/browser/sharing.py:361
 msgid "Search for user or group"
 msgstr "Buscar usuario o grupo"
@@ -4607,7 +4641,7 @@ msgstr "Seleccionar elementos aleatoriamente"
 msgid "Select referenced content"
 msgstr "Seleccione contenido referenciado"
 
-#: plone.app.dexterity/plone/app/dexterity/browser/behaviors.py:56
+#: plone.app.dexterity/plone/app/dexterity/browser/behaviors.py:82
 msgid "Select the behaviors to enable for this content type."
 msgstr "Seleccione los comportamientos que estarán habilitados para este tipo de contenido."
 
@@ -4691,13 +4725,17 @@ msgstr "Separar vista de nombre y título con '|'"
 msgid "Session refresh support"
 msgstr "Soporte de actualización de sesión"
 
+#: plone.session/plone/session/profiles.zcml:19
+msgid "Session refresh support [uninstall]"
+msgstr ""
+
 #: plone.app.textfield/plone/app/textfield/interfaces.py:25
 msgid "Set to None to disable checking"
 msgstr "Establezca a Ninguno para deshabilitar la comprobación"
 
 #: plone.app.contenttypes/plone/app/contenttypes/behaviors/tableofcontents.py:14
 #: plone.app.dexterity/plone/app/dexterity/behaviors/discussion.py:25
-#: plone.app.dexterity/plone/app/dexterity/behaviors/exclfromnav.py:19
+#: plone.app.dexterity/plone/app/dexterity/behaviors/exclfromnav.py:48
 msgid "Settings"
 msgstr "Configuración"
 
@@ -4724,7 +4762,7 @@ msgstr "Nombre corto"
 msgid "Short Name (ID)"
 msgstr "Nombre corto (ID)"
 
-#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:127
+#: plone.app.dexterity/plone/app/dexterity/behaviors/configure.zcml:145
 #: plone.app.dexterity/plone/app/dexterity/behaviors/id.py:26
 msgid "Short name"
 msgstr ""
@@ -4733,7 +4771,7 @@ msgstr ""
 msgid "Short name (id)"
 msgstr "Nombre corto (id)"
 
-#: CMFPlone/interfaces/resources.py:41
+#: CMFPlone/interfaces/resources.py:43
 msgid "Should be accessible on @@getWCconfig?id=name"
 msgstr "Debería ser accesible en @@getWCconfig?id=name"
 
@@ -4794,7 +4832,7 @@ msgstr "Mostrar la fecha en la que fue publicado un elemento en el pie de autor.
 
 #: CMFPlone/interfaces/controlpanel.py:1122
 msgid "Show thumbs in listings"
-msgstr ""
+msgstr "Mostrar miniaturas en listados"
 
 #: CMFPlone/skins/plone_prefs/prefs_error_log_update.py:14
 msgid "Showing all entries"
@@ -4972,6 +5010,10 @@ msgstr "Plugin de corrector ortográfico a utilizar"
 msgid "Standard view"
 msgstr "Vista estándar"
 
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:199
+msgid "Start Date"
+msgstr ""
+
 #: plone.app.content/plone/app/content/browser/contents/workflow.py:26
 msgid "State"
 msgstr "Estado"
@@ -5001,7 +5043,7 @@ msgstr "Combinaciones eliminadas"
 msgid "Stripped tags"
 msgstr "Etiquetas eliminadas"
 
-#: CMFPlone/interfaces/resources.py:106
+#: CMFPlone/interfaces/resources.py:110
 msgid "Stub JavaScript modules"
 msgstr ""
 
@@ -5039,7 +5081,7 @@ msgstr ""
 msgid "Subtopics"
 msgstr "Subtemas"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:41
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:74
 msgid "Success"
 msgstr "Éxito"
 
@@ -5047,14 +5089,15 @@ msgstr "Éxito"
 msgid "Success! Check your mailbox for the test message."
 msgstr "¡Prueba exitosa! Compruebe que tiene el mensaje de prueba en su bandeja de correo."
 
-#: plone.app.content/plone/app/content/browser/contents/copy.py:34
+#: plone.app.content/plone/app/content/browser/contents/copy.py:31
 msgid "Successfully copied items"
 msgstr "Elementos copiados con éxito"
 
-#: plone.app.content/plone/app/content/browser/contents/cut.py:35
+#: plone.app.content/plone/app/content/browser/contents/cut.py:31
 msgid "Successfully cut items"
 msgstr "Elementos cortados con éxito"
 
+#. Default: "Successfully deleted items"
 #: plone.app.content/plone/app/content/browser/contents/delete.py:46
 msgid "Successfully delete items"
 msgstr "Elementos eliminados con éxito"
@@ -5063,23 +5106,23 @@ msgstr "Elementos eliminados con éxito"
 msgid "Successfully modified items"
 msgstr "Elementos modificados con éxito"
 
-#: plone.app.content/plone/app/content/browser/contents/rearrange.py:22
+#: plone.app.content/plone/app/content/browser/contents/rearrange.py:32
 msgid "Successfully moved item"
 msgstr "Elemento movido satisfactoriamente"
 
-#: plone.app.content/plone/app/content/browser/contents/paste.py:32
+#: plone.app.content/plone/app/content/browser/contents/paste.py:31
 msgid "Successfully pasted items"
 msgstr "Elementos pegados con éxito"
 
-#: plone.app.content/plone/app/content/browser/contents/rearrange.py:61
+#: plone.app.content/plone/app/content/browser/contents/rearrange.py:71
 msgid "Successfully rearranged folder"
 msgstr "Carpeta reorganizada con éxito"
 
-#: plone.app.content/plone/app/content/browser/contents/properties.py:43
+#: plone.app.content/plone/app/content/browser/contents/properties.py:41
 msgid "Successfully updated metadata"
 msgstr "Metadatos actualizados satisfactoriamente"
 
-#: plone.app.content/plone/app/content/browser/contents/tags.py:41
+#: plone.app.content/plone/app/content/browser/contents/tags.py:39
 msgid "Successfully updated tags on items"
 msgstr "Etiquetas de elementos actualizadas con éxito"
 
@@ -5116,7 +5159,7 @@ msgstr "Imagen TIFF"
 msgid "Table Columns"
 msgstr "Columnas de la Tabla"
 
-#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:34
+#: plone.app.contenttypes/plone/app/contenttypes/behaviors/configure.zcml:36
 msgid "Table of contents"
 msgstr ""
 
@@ -5135,8 +5178,8 @@ msgstr "Vista tabular"
 msgid "Tag"
 msgstr "Etiqueta"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:169
-#: plone.app.content/plone/app/content/browser/contents/tags.py:26
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:200
+#: plone.app.content/plone/app/content/browser/contents/tags.py:24
 msgid "Tags"
 msgstr "Etiquetas"
 
@@ -5171,7 +5214,7 @@ msgstr "TempFolder"
 msgid "Template"
 msgstr "Plantilla"
 
-#: plone/app/theming/browser/controlpanel.pt:103
+#: plone/app/theming/browser/controlpanel.pt:104
 msgid "Test Styles"
 msgstr "Probar Estilos"
 
@@ -5196,11 +5239,11 @@ msgstr "Búsqueda de texto del contenido de un elemento"
 msgid "Text search of an item's title"
 msgstr "Búsqueda de texto del título de un elemento"
 
-#: plone.portlet.static/plone/portlet/static/static.py:50
+#: plone.portlet.static/plone/portlet/static/static.py:60
 msgid "Text to be shown in the footer"
 msgstr "Texto a mostrar en el pie"
 
-#: CMFPlone/RegistrationTool.py:354
+#: CMFPlone/RegistrationTool.py:353
 msgid "That user does not have an email address."
 msgstr "El usuario no tiene dirección de correo."
 
@@ -5269,7 +5312,7 @@ msgstr "La fecha en la que un elemento fue creado"
 msgid "The default timezone setting of the portal. Users will be able to set their own timezone, if available timezones are defined in the date and time settings."
 msgstr "La configuración de zona horaria por defecto del portal. Los usuarios podrán establecer su propia zona horaria, si se definen las zonas horarias en la configuración de fecha y hora."
 
-#: CMFPlone/RegistrationTool.py:358
+#: CMFPlone/RegistrationTool.py:357
 msgid "The email address did not validate."
 msgstr "La dirección de correo no ha sido validada."
 
@@ -5310,7 +5353,7 @@ msgstr "El nombre de grupo introducido no es válido."
 msgid "The id of the site. This ends up as part of the URL.<br /> No special characters are allowed."
 msgstr "El id del sitio. Este termina formando parte del URL.<br /> No se permiten caracteres especiales."
 
-#: plone.app.content/plone/app/content/browser/actions.py:294
+#: plone.app.content/plone/app/content/browser/actions.py:298
 msgid "The item you are trying to paste could not be found. It may have been moved or deleted after you copied or cut it."
 msgstr "El elemento que está intentando pegar no ha sido encontrado. Es posible que haya sido movido o eliminado después de que lo copiara o cortara."
 
@@ -5323,7 +5366,7 @@ msgstr "El título de un elemento, transformado para ordenación"
 msgid "The location of an item"
 msgstr "La ubicación de un elemento"
 
-#: CMFPlone/RegistrationTool.py:231
+#: CMFPlone/RegistrationTool.py:230
 #: plone.app.users/plone/app/users/browser/register.py:366
 msgid "The login name you selected is already in use or is not valid. Please choose another."
 msgstr "El nombre de inicio de sesión que ha elegido ya está en uso o no es válido. Por favor, elija otro."
@@ -5361,8 +5404,12 @@ msgstr "El orden de un elemento en su carpeta padre"
 msgid "The person that created an item"
 msgstr "La persona que ha creado un elemento"
 
-#: CMFPlone/interfaces/resources.py:74
-msgid "The resources that is going to be loaded on this bundle in order"
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/z3cform/interfaces.py:21
+msgid "The recurrence rule couldn't be parsed."
+msgstr ""
+
+#: CMFPlone/interfaces/resources.py:78
+msgid "The resources that are going to be loaded on this bundle in order"
 msgstr "Los recursos que van a ser cargados en este paquete en orden"
 
 #: plone.app.contentrules/plone/app/contentrules/conditions/role.py:23
@@ -5415,7 +5462,7 @@ msgstr "La fecha y hora de inicio de un evento"
 msgid "The template containing the portlet."
 msgstr "La plantilla que contiene el portlet."
 
-#: plone.portlet.static/plone/portlet/static/static.py:36
+#: plone.portlet.static/plone/portlet/static/static.py:46
 msgid "The text to render"
 msgstr "Texto a visualizar"
 
@@ -5457,29 +5504,29 @@ msgstr "Los estados de flujo de trabajo a comprobar."
 msgid "The workflow transitions to check for."
 msgstr "Las transiciones de flujo de trabajo a comprobar."
 
-#: plone/app/theming/browser/controlpanel.pt:516
+#: plone/app/theming/browser/controlpanel.pt:517
 msgid "Theme base"
 msgstr "Base del tema"
 
-#: plone/app/theming/browser/controlpanel.py:386
+#: plone/app/theming/browser/controlpanel.py:390
 msgid "Theme deleted"
 msgstr "Tema eliminado"
 
-#: plone/app/theming/browser/controlpanel.pt:341
+#: plone/app/theming/browser/controlpanel.pt:342
 msgid "Theme details"
 msgstr "Detalles del tema"
 
-#: plone/app/theming/browser/controlpanel.py:146
+#: plone/app/theming/browser/controlpanel.py:152
 msgid "Theme disabled."
 msgstr "Tema deshabilitado."
 
-#: plone/app/theming/browser/controlpanel.py:126
+#: plone/app/theming/browser/controlpanel.py:132
 msgid "Theme enabled. Note that this control panel page is never themed."
 msgstr "Tema habilitado. Tenga en cuenta que esta página del panel de control nunca usa temas."
 
 #. Default: "Themes"
 #: CMFPlone/profiles/default/controlpanel.xml
-#: plone/app/theming/browser/controlpanel.pt:87
+#: plone/app/theming/browser/controlpanel.pt:88
 #: plone/app/theming/profiles/default/controlpanel.xml
 msgid "Themes"
 msgstr "Temas"
@@ -5517,11 +5564,11 @@ msgstr "No hay ninguna condición adicional comprobada en esta regla."
 msgid "There was an error saving content rules."
 msgstr "Ha ocurrido un error al guardar las reglas de contenido."
 
-#: plone/app/theming/browser/controlpanel.py:209
+#: plone/app/theming/browser/controlpanel.py:215
 msgid "There were errors"
 msgstr "Se han producido errores"
 
-#: plone.app.users/plone/app/users/browser/membersearch.py:96
+#: plone.app.users/plone/app/users/browser/membersearch.py:95
 #: plone.app.users/plone/app/users/browser/register.py:70
 #: plone.app.users/plone/app/users/browser/registersettingspanel.py:20
 msgid "There were errors."
@@ -5571,7 +5618,7 @@ msgstr "Este complemento ha sido actualizado."
 msgid "This field is required, please provide some information."
 msgstr "Este campo está requerido, por favor provea alguna información."
 
-#: plone.app.content/plone/app/content/browser/contents/rearrange.py:32
+#: plone.app.content/plone/app/content/browser/contents/rearrange.py:42
 msgid "This folder does not support ordering"
 msgstr "Esta carpeta no soporta ordenación"
 
@@ -5667,7 +5714,7 @@ msgstr "Esto aparece en la barra de título de los navegadores así como en las 
 msgid "This site configuration is outdated and needs to be upgraded:"
 msgstr "La configuración de este sitio está obsoleta y debe ser actualizada:"
 
-#: plone/app/theming/browser/controlpanel.py:354
+#: plone/app/theming/browser/controlpanel.py:359
 msgid "This title is already in use"
 msgstr "Este título ya ha sido utilizado"
 
@@ -5681,14 +5728,14 @@ msgstr "Esto instalará plone.app.contenttypes y le redirigirá a un formulario 
 
 #: CMFPlone/interfaces/controlpanel.py:1121
 msgid "Thumb visibility"
-msgstr ""
+msgstr "Visibilidad de miniaturas"
 
 #. Default: "Thumbnail view"
 #: plone.app.collection/plone/app/collection/browser/configure.zcml:74
 msgid "Thumbnail view"
 msgstr "Vista en Miniatura"
 
-#: plone.portlet.static/plone/portlet/static/static.py:41
+#: plone.portlet.static/plone/portlet/static/static.py:51
 msgid "Tick this box if you want to render the text above without the standard header, border or footer."
 msgstr "Marque esta casilla si quiere que el texto de arriba sea presentado sin la cabecera, borde o pie estándar."
 
@@ -5712,12 +5759,12 @@ msgstr "Consejo: puede usar * para autocompletar."
 
 #. Default: "Title"
 #: CMFPlone/interfaces/controlpanel.py:864
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:181
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:256
 #: plone.app.portlets/plone/app/portlets/portlets/rss.py:230
 msgid "Title"
 msgstr "Título"
 
-#: plone/app/theming/browser/controlpanel.py:338
+#: plone/app/theming/browser/controlpanel.py:343
 msgid "Title is required"
 msgstr "Título requerido"
 
@@ -5726,7 +5773,7 @@ msgid "Title of the portlet.  If omitted, the title of the feed will be used."
 msgstr "Título del portlet. Si se omite, se utilizará el título de la fuente."
 
 #: plone.portlet.collection/plone/portlet/collection/collection.py:39
-#: plone.portlet.static/plone/portlet/static/static.py:30
+#: plone.portlet.static/plone/portlet/static/static.py:40
 msgid "Title of the rendered portlet"
 msgstr "Título del portlet visualizado"
 
@@ -5743,6 +5790,8 @@ msgid "To make new add-ons show up here, add them to your buildout configuration
 msgstr "Para que los nuevos complementos aparezcan aquí, agréguelos a su configuración de buildout, ejecute buildout, y reinicie el proceso servidor. Para instrucciones detalladas, vea ${third_party_product}."
 
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
+#: plone.app.widgets/plone/app/widgets/utils.py:71
+#: plone.formwidget.datetime/plone/formwidget/datetime/base.py:279
 msgid "Today"
 msgstr "Hoy"
 
@@ -5750,7 +5799,7 @@ msgstr "Hoy"
 msgid "Top"
 msgstr "Superior"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:175
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:202
 msgid "Total comments"
 msgstr "Comentarios totales"
 
@@ -5765,15 +5814,6 @@ msgstr ""
 #: plone.app.discussion/plone/app/discussion/interfaces.py:33
 msgid "Total number of public comments on this item"
 msgstr "Total de número de comentarios públicos en el elemento"
-
-#. Default: "Transform"
-#: plone.app.contenttypes/plone/app/contenttypes/profiles/uninstall/types/Image.xml
-msgid "Transform"
-msgstr "Transformar"
-
-#: plone.app.discussion/plone/app/discussion/comment.py:161
-msgid "Transform '%s' => '%s' not available."
-msgstr ""
 
 #: plone.app.textfield/plone/app/textfield/interfaces.py:79
 msgid "Transformed value in the target MIME type"
@@ -5799,7 +5839,7 @@ msgstr "Evento disparador"
 msgid "Twitter Username"
 msgstr "Nombre de usuario de Twitter"
 
-#: plone.app.content/plone/app/content/browser/contents/__init__.py:170
+#: plone.app.content/plone/app/content/browser/contents/__init__.py:201
 #: plone.app.querystring/plone/app/querystring/profiles/default/registry.xml
 msgid "Type"
 msgstr "Tipo"
@@ -5840,7 +5880,7 @@ msgstr "Tipos que pueden ser establecidos como página por defecto"
 msgid "Types which use the view action in listing views."
 msgstr "Tipos que usan la acción de vista en las vistas de listados."
 
-#: CMFPlone/interfaces/resources.py:22
+#: CMFPlone/interfaces/resources.py:24
 #: plone.schema/plone/schema/editor.py:21
 #: plone.stringinterp/plone/stringinterp/adapters.py:53
 msgid "URL"
@@ -5850,11 +5890,11 @@ msgstr "URL"
 msgid "URL of RSS feed"
 msgstr "URL de la fuente RSS"
 
-#: CMFPlone/interfaces/resources.py:52
+#: CMFPlone/interfaces/resources.py:54
 msgid "URL of the last css compilation"
 msgstr "URL de la última compilación de CSS"
 
-#: CMFPlone/interfaces/resources.py:48
+#: CMFPlone/interfaces/resources.py:50
 msgid "URL of the last js compilation"
 msgstr "URL de la última compilación de JS"
 
@@ -5874,7 +5914,7 @@ msgstr "No ha sido posible mover ${name} como parte de la acción 'move' de la r
 msgid "Unable to remove ${name} as part of content rule 'delete' action: ${error}"
 msgstr "No ha sido posible quitar ${name} como parte de la acción 'delete' de la regla de contenido: ${error}"
 
-#: CMFPlone/browser/author.py:122
+#: CMFPlone/browser/author.py:123
 #: CMFPlone/browser/sendto.py:97
 msgid "Unable to send mail."
 msgstr "No ha sido posible enviar el correo."
@@ -5949,7 +5989,7 @@ msgstr "¡${product} actualizado"
 msgid "Upgrades"
 msgstr "Actualizaciones"
 
-#: plone/app/theming/browser/controlpanel.pt:99
+#: plone/app/theming/browser/controlpanel.pt:100
 msgid "Upload Zip file"
 msgstr "Subir archivo Zip"
 
@@ -5989,7 +6029,7 @@ msgstr "Acciones de Usuario"
 msgid "User Created"
 msgstr "Usuario Creado"
 
-#: plone.app.users/plone/app/users/browser/userdatapanel.py:48
+#: plone.app.users/plone/app/users/browser/userdatapanel.py:58
 msgid "User Data Form"
 msgstr "Formulario de Datos del Usuario"
 
@@ -6033,7 +6073,7 @@ msgstr "Rol del usuario"
 msgid "User/Groups settings"
 msgstr "Configuración de Usuarios/Grupos"
 
-#: plone.app.discussion/plone/app/discussion/interfaces.py:174
+#: plone.app.discussion/plone/app/discussion/interfaces.py:173
 msgid "Username of the commenter"
 msgstr "Nombre de usuario del comentador"
 
@@ -6087,6 +6127,14 @@ msgstr "Fallo en la validación($name: Los datos subidos son demasiado grandes: 
 #: CMFPlone/interfaces/controlpanel.py:1483
 msgid "Verify login name"
 msgstr "Verificar nombre de inicio de sesión"
+
+#: plone.app.versioningbehavior/plone/app/versioningbehavior/configure.zcml:37
+msgid "Versioning"
+msgstr ""
+
+#: plone.app.versioningbehavior/plone/app/versioningbehavior/configure.zcml:37
+msgid "Versioning support with CMFEditions"
+msgstr ""
 
 #. Default: "View"
 #: CMFPlone/profiles/default/types/Discussion_Item.xml
@@ -6197,10 +6245,6 @@ msgstr "Aviso"
 msgid "Warning, disabling can be potentially dangereous. Only disable if you know what you are doing."
 msgstr "Aviso, deshabilitar esto puede ser potencialmente peligroso. Continúe sólo si sabe lo que está haciendo."
 
-#: CMFPlone/browser/templates/hero.pt:12
-msgid "Welcome!"
-msgstr "¡Bienvenido!"
-
 #: CMFPlone/skins/plone_login/login_next.cpy:60
 msgid "Welcome! You are now logged in."
 msgstr "¡Bienvenido! Ha iniciado la sesión."
@@ -6273,9 +6317,13 @@ msgstr "Transición de flujo de trabajo"
 msgid "Workflow transitions are: ${transitions}"
 msgstr "Las transiciones de flujo de trabajo son: ${transitions}"
 
-#: plone.app.iterate/plone/app/iterate/configure.zcml:23
+#: plone.app.iterate/plone/app/iterate/configure.zcml:22
 msgid "Working Copy Support (Iterate)"
 msgstr "Soporte de Copia de Trabajo (Repetir)"
+
+#: plone.app.iterate/plone/app/iterate/configure.zcml:52
+msgid "Working Copy Support (Iterate) [uninstall]"
+msgstr ""
 
 #: Archetypes/browser/templates/calendar_macros.pt:55
 msgid "Year"
@@ -6292,11 +6340,11 @@ msgstr "Sí"
 msgid "You are not authorized to delete ${title}."
 msgstr "No está autorizado a eliminar ${title}."
 
-#: plone.app.content/plone/app/content/browser/contents/paste.py:52
+#: plone.app.content/plone/app/content/browser/contents/paste.py:50
 msgid "You are not authorized to paste ${title} here."
 msgstr "No está autorizado a pegar ${title} aquí."
 
-#: plone.app.content/plone/app/content/browser/actions.py:286
+#: plone.app.content/plone/app/content/browser/actions.py:290
 msgid "You are not authorized to paste here."
 msgstr "No está autorizado a pegar aquí."
 
@@ -6349,15 +6397,15 @@ msgstr ""
 msgid "You must enable cookies before you can log in."
 msgstr "Debe habilitar las cookies antes de iniciar la sesión."
 
-#: CMFPlone/RegistrationTool.py:241
+#: CMFPlone/RegistrationTool.py:240
 msgid "You must enter a valid email address."
 msgstr "Debe introducir una dirección de correo válida."
 
-#: CMFPlone/RegistrationTool.py:228
+#: CMFPlone/RegistrationTool.py:227
 msgid "You must enter a valid name."
 msgstr "Debe introducir un nombre válido."
 
-#: CMFPlone/RegistrationTool.py:236
+#: CMFPlone/RegistrationTool.py:235
 msgid "You must enter an email address."
 msgstr "Debe introducir una dirección de correo válida."
 
@@ -6387,11 +6435,11 @@ msgstr "Debería compactar su base de datos con regularidad. Este número indica
 msgid "Your Plone site has not been added yet:"
 msgstr "Su sitio Plone aún no ha sido agregado:"
 
-#: plone.app.discussion/plone/app/discussion/browser/comments.py:258
+#: plone.app.discussion/plone/app/discussion/browser/comments.py:263
 msgid "Your comment awaits moderator approval."
 msgstr "Su comentario está pendiente de aprobación por el moderador."
 
-#: CMFPlone/RegistrationTool.py:181
+#: CMFPlone/RegistrationTool.py:180
 msgid "Your password and confirmation did not match. Please try again."
 msgstr "Su contraseña y su confirmación no coinciden. Por favor, inténtelo de nuevo."
 
@@ -6445,10 +6493,18 @@ msgstr "Prefijo de URL absoluto"
 msgid "action_convert_legacy_portlets"
 msgstr "Se han definido aquí portlets heredados. Haga clic en el botón para convertirlos al nuevo estilo de portlets."
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:13
+msgid "add"
+msgstr ""
+
 #. Default: "Comment"
-#: plone.app.discussion/plone/app/discussion/browser/comments.py:128
+#: plone.app.discussion/plone/app/discussion/browser/comments.py:132
 msgid "add_comment_button"
 msgstr "Comentar"
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:17
+msgid "add_date"
+msgstr ""
 
 #. Default: "Add new fieldset…"
 #: plone.schemaeditor/plone/schemaeditor/browser/schema/schema_listing.pt:13
@@ -6458,6 +6514,14 @@ msgstr ""
 #. Default: "Add new field…"
 #: plone.schemaeditor/plone/schemaeditor/browser/schema/schema_listing.pt:7
 msgid "add_new_field_hellip"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:10
+msgid "add_rules"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:60
+msgid "additional_date"
 msgstr ""
 
 #. Default: "This item can not be deleted because it is currently locked by another user."
@@ -6484,18 +6548,22 @@ msgstr "¿Está seguro de que quiere eliminar esta carpeta y todos sus contenido
 msgid "alphabetically"
 msgstr "alfabéticamente"
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:129
+msgid "already_added"
+msgstr ""
+
 #. Default: "<any>"
-#: Archetypes/ArchetypeTool.py:848
+#: Archetypes/ArchetypeTool.py:837
 msgid "at_search_any"
 msgstr "<cualquiera>"
 
 #. Default: "You are receiving this mail because ${from_address} is sending feedback about content you created at ${url}."
-#: CMFPlone/browser/templates/author_feedback_template.pt:19
+#: CMFPlone/browser/templates/author_feedback_template.pt:18
 msgid "author_feedback_mailtemplate_body"
 msgstr "Ha recibido este correo porque ${from_address} le ha enviado su opinión sobre el contenido que creó en ${url}."
 
 #. Default: "You have received a message from ${from_address}."
-#: CMFPlone/browser/templates/author_feedback_template.pt:23
+#: CMFPlone/browser/templates/author_feedback_template.pt:22
 msgid "author_message_mailtemplate_body"
 msgstr "Ha recibido un mensaje de ${from_address}."
 
@@ -6510,20 +6578,20 @@ msgid "batch_last_item"
 msgstr "Último elemento"
 
 #. Default: "Next ${number} items"
-#: plone.batching/plone/batching/batchnavigation.pt:28
+#: plone.batching/plone/batching/batchnavigation.pt:83
 #: plone.batching/plone/batching/batchnavigation_bootstrap.pt:67
 msgid "batch_next_x_items"
 msgstr "${number} elementos siguientes"
 
 #. Default: "Previous ${number} items"
-#: plone.batching/plone/batching/batchnavigation.pt:16
+#: plone.batching/plone/batching/batchnavigation.pt:19
 #: plone.batching/plone/batching/batchnavigation_bootstrap.pt:30
 msgid "batch_previous_x_items"
 msgstr "${number} elementos anteriores"
 
 #. Default: "${number} items matching your search terms."
 #: CMFPlone/browser/templates/search.pt:190
-#: plone.app.querystring/plone/app/querystring/querybuilder.py:170
+#: plone.app.querystring/plone/app/querystring/querybuilder.py:184
 #: plone.app.querystring/plone/app/querystring/results.pt:15
 msgid "batch_x_items_matching_your_criteria"
 msgstr "${number} elementos que coinciden con sus términos de búsqueda"
@@ -6551,7 +6619,7 @@ msgid "box_languages"
 msgstr "Idiomas"
 
 #. Default: "last modified"
-#: CMFPlone/browser/templates/search.pt:270
+#: CMFPlone/browser/templates/search.pt:272
 #: CMFPlone/skins/plone_content/folder_listing.pt:142
 #: CMFPlone/skins/plone_content/folder_summary_view.pt:85
 msgid "box_last_modified"
@@ -6578,7 +6646,7 @@ msgid "box_news"
 msgstr "Últimas noticias"
 
 #. Default: "published"
-#: CMFPlone/browser/templates/search.pt:260
+#: CMFPlone/browser/templates/search.pt:262
 #: plone.app.layout/plone/app/layout/viewlets/document_byline.pt:34
 #: plone.app.layout/plone/app/layout/viewlets/history_view.pt:49
 msgid "box_published"
@@ -6620,8 +6688,16 @@ msgstr "Borrar"
 msgid "bulkactions_publish"
 msgstr "Aprobar"
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:122
+msgid "bysetpos"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:57
+msgid "cancel"
+msgstr ""
+
 #. Default: "Cancel"
-#: plone.app.discussion/plone/app/discussion/browser/comment.py:101
+#: plone.app.discussion/plone/app/discussion/browser/comment.py:102
 msgid "cancel_form_button"
 msgstr ""
 
@@ -6646,17 +6722,17 @@ msgid "clear_filter"
 msgstr "Limpiar filtro"
 
 #. Default: "You can add a comment by filling out the form below. Plain text formatting. Web and email addresses are transformed into clickable links."
-#: plone.app.discussion/plone/app/discussion/browser/comments.py:47
+#: plone.app.discussion/plone/app/discussion/browser/comments.py:49
 msgid "comment_description_intelligent_text"
 msgstr "Puede agregar un comentario llenando el siguiente formulario. Formato de texto plano. Las direcciones web y de correo electrónico se transforman en vínculos."
 
 #. Default: "You can add a comment by filling out the form below. Plain text formatting. You can use the Markdown syntax for links and images."
-#: plone.app.discussion/plone/app/discussion/browser/comments.py:41
+#: plone.app.discussion/plone/app/discussion/browser/comments.py:42
 msgid "comment_description_markdown"
 msgstr "Puede agregar un comentario llenando el siguiente formulario. Formato de texto plano. Usted puede usar la sintaxis Markdown para los enlaces e imágenes."
 
 #. Default: "Comments are moderated."
-#: plone.app.discussion/plone/app/discussion/browser/comments.py:53
+#: plone.app.discussion/plone/app/discussion/browser/comments.py:56
 msgid "comment_description_moderation_enabled"
 msgstr "Los comentarios son moderados."
 
@@ -6666,12 +6742,12 @@ msgid "comment_description_plain_text"
 msgstr "Puede agregar un comentario llenando el siguiente formulario. Formato de texto plano."
 
 #. Default: "Edit comment cancelled"
-#: plone.app.discussion/plone/app/discussion/browser/comment.py:105
+#: plone.app.discussion/plone/app/discussion/browser/comment.py:106
 msgid "comment_edit_cancel_notification"
 msgstr ""
 
 #. Default: "Comment was edited"
-#: plone.app.discussion/plone/app/discussion/browser/comment.py:95
+#: plone.app.discussion/plone/app/discussion/browser/comment.py:96
 msgid "comment_edit_notification"
 msgstr ""
 
@@ -6785,6 +6861,14 @@ msgstr "Tema actual"
 msgid "current_theme_description"
 msgstr "El nombre del tema actual, es decir, el aplicado más recientemente."
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:19
+msgid "daily_interval_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:20
+msgid "daily_interval_2"
+msgstr ""
+
 #: CMFPlone/browser/search.py:144
 msgid "date (newest first)"
 msgstr "fecha (primero los más nuevos)"
@@ -6813,6 +6897,10 @@ msgstr "Eliminar archivo actual"
 #: Archetypes/skins/archetypes/widgets/image.pt:85
 msgid "delete_image"
 msgstr "Eliminar imagen actual"
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:12
+msgid "delete_rules"
+msgstr ""
 
 #. Default: "If the default page is also a folder, add items to it from here."
 #: plone.app.contentmenu/plone/app/contentmenu/menu.py:611
@@ -6852,12 +6940,12 @@ msgid "description_add_new_item"
 msgstr "Seleccione el tipo de elemento que desea agregar a su carpeta."
 
 #. Default: "Use the fields below to configure the Diazo theme manually. Usually, these settings are applied by enabling a theme from the <strong>Themes</strong> tab."
-#: plone/app/theming/browser/controlpanel.pt:343
+#: plone/app/theming/browser/controlpanel.pt:344
 msgid "description_advanced"
 msgstr "Utilice los siguientes campos para configurar el tema Diazo de forma manual. Normalmente, estas opciones son aplicadas al habilitar un tema de la pestaña <strong>Temas</strong>."
 
 #. Default: "The settings below control the presentation of the <em>content</em> produced by Plone before a Diazo theme is applied. Note that these settings will have an effect even if no Diazo theme is currently enabled."
-#: plone/app/theming/browser/controlpanel.pt:518
+#: plone/app/theming/browser/controlpanel.pt:519
 msgid "description_advanced_base"
 msgstr "Las siguientes opciones controlan la presentación del <em>contenido</em> producido por Plone antes de que se aplique un tema Diazo. Tenga en cuenta que estas opciones tendrán efecto incluso si actualmente no ha habilitado un tema Diazo."
 
@@ -6877,7 +6965,7 @@ msgid "description_available_languages"
 msgstr "Los idiomas a los que el sitio debería ser traducible."
 
 #. Default: "Use the buttons to create or upload a new Diazo theme, or select an existing theme from a the list below."
-#: plone/app/theming/browser/controlpanel.pt:89
+#: plone/app/theming/browser/controlpanel.pt:90
 msgid "description_basic_settings"
 msgstr "Utilice los botones para crear o subir un nuevo tema Diazo, o seleccione un tema existente de la siguiente lista."
 
@@ -6902,7 +6990,7 @@ msgid "description_checkin"
 msgstr "Al guardar esta copia de trabajo reemplazará el elemento actual con la copia de trabajo."
 
 #. Default: "On check-out, a working copy of the content item will be created in the selected container, and the original will be locked to prevent other users from editing it."
-#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:21
+#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:22
 msgid "description_checkout"
 msgstr "Al retirar una versión, una copia de trabajo del elemento de contenido será creada en el contenedor seleccionado, y la original será bloqueada para evitar que otros usuarios la editen."
 
@@ -7009,7 +7097,7 @@ msgid "description_groups_management2"
 msgstr "El símbolo ${image_link_icon} indica un rol heredado por la pertenencia a otro grupo."
 
 #. Default: "You can import a Zip file containing an existing theme. This should contain a single top level directory, which will be used as the theme identifier. If no Diazo <code>rules.xml</code> or <code>manifest.cfg</code> file is found in this directory, a default <code>rules.xml</code> file will be created."
-#: plone/app/theming/browser/controlpanel.pt:692
+#: plone/app/theming/browser/controlpanel.pt:693
 msgid "description_import"
 msgstr "Puede importar un archivo Zip que contenga un tema existente. Este debería contener una única carpeta de nivel superior, que será utilizada como el identificador del tema. Si no se encuentran los archivos de Diazo <code>rules.xml</code> o <code>manifest.cfg</code> en este directorio, se creará un archivo <code>rules.xml</code> por defecto."
 
@@ -7070,7 +7158,7 @@ msgid "description_manage_group_portlets"
 msgstr "Los espacios izquierdo y derecho para portlets ahora sólo mostrarán aquellos portlets asignados a este grupo. Utilice los enlaces subir, bajar, eliminar y editar para administrar los portlets de usuario. Utilice la lista desplegable para agregar nuevos portlets."
 
 #. Default: "This search form enables you to find users by specifying one or more search criteria."
-#: plone.app.users/plone/app/users/browser/membersearch.py:91
+#: plone.app.users/plone/app/users/browser/membersearch.py:90
 msgid "description_member_search"
 msgstr "Este formulario de búsqueda le permite encontrar miembros especificando uno o más criterios."
 
@@ -7112,7 +7200,7 @@ msgstr "No tiene suficientes permisos para ver esta página. Si cree que está r
 
 #. Default: "No results were found."
 #: CMFPlone/browser/templates/search.pt:218
-#: plone.app.contenttypes/plone/app/contenttypes/browser/collection.py:86
+#: plone.app.contenttypes/plone/app/contenttypes/browser/collection.py:93
 #: plone.app.querystring/plone/app/querystring/results.pt:22
 msgid "description_no_results_found"
 msgstr "Sin resultado en la búsqueda."
@@ -7134,7 +7222,7 @@ msgid "description_not_accept_cookies"
 msgstr "Si su nombre de usuario y contraseña son correctos, el problema puede residir en que su navegador no ha sido configurado para aceptar cookies."
 
 #. Default: "Please note that this control panel page will never be themed."
-#: plone/app/theming/browser/controlpanel.pt:55
+#: plone/app/theming/browser/controlpanel.pt:56
 msgid "description_notheme_controlpanel"
 msgstr "Por favor, tenga en cuenta que esta página del panel de control no utiliza temas."
 
@@ -7161,12 +7249,12 @@ msgid "description_password_reset_or_registered"
 msgstr "En breve recibirá un correo que contiene un URL que le permitirá establecer su contraseña. Cuando reciba este correo, por favor utilice el enlace para completar su proceso de registro. NOTA: El URL de restablecimiento de contraseña caduca en ${time} horas. Si su solicitud de restablecimiento de contraseña caduca, podrá utilizar el enlace \"Olvidó su contraseña\" para generar otra solicitud de restablecimiento de contraseña."
 
 #. Default: "Change your personal information"
-#: plone.app.users/plone/app/users/browser/userdatapanel.py:69
+#: plone.app.users/plone/app/users/browser/userdatapanel.py:79
 msgid "description_personal_information_form"
 msgstr "Cambiar su información personal"
 
 #. Default: "Change personal information for $name"
-#: plone.app.users/plone/app/users/browser/userdatapanel.py:62
+#: plone.app.users/plone/app/users/browser/userdatapanel.py:72
 msgid "description_personal_information_form_otheruser"
 msgstr "Cambiar la información personal de $name"
 
@@ -7242,7 +7330,7 @@ msgid "description_set_language_cookie_always"
 msgstr "es decir, también cuando el parámetro de la petición 'set_language' no existe"
 
 #. Default: "You can control who can view and edit your item using the list below."
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:33
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:38
 msgid "description_sharing_control"
 msgstr "Puede controlar quién puede ver y editar su elemento utilizando la siguiente lista."
 
@@ -7282,7 +7370,7 @@ msgid "description_site_map"
 msgstr "Una visión general del contenido disponible en este sitio. Mantenga el cursor quieto sobre un elemento durante unos instantes para obtener su descripción."
 
 #. Default: "A portlet which can display static HTML text."
-#: plone.portlet.static/plone/portlet/static/static.py:168
+#: plone.portlet.static/plone/portlet/static/static.py:182
 msgid "description_static_portlet"
 msgstr "Un portlet que puede mostrar texto HTML estático."
 
@@ -7364,6 +7452,14 @@ msgstr "Ha sido registrado como miembro."
 msgid "description_you_can_log_on_now"
 msgstr "Pulse el botón para entrar inmediatamente."
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:9
+msgid "display_activate"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:8
+msgid "display_unactivate"
+msgstr ""
+
 #. Default: "Doctype"
 #: plone/app/theming/interfaces.py:162
 msgid "doctype"
@@ -7383,13 +7479,17 @@ msgid "edit"
 msgstr "editar"
 
 #. Default: "Edit comment"
-#: plone.app.discussion/plone/app/discussion/browser/comment.py:74
+#: plone.app.discussion/plone/app/discussion/browser/comment.py:75
 msgid "edit_comment_form_button"
 msgstr ""
 
 #. Default: "Edit comment"
-#: plone.app.discussion/plone/app/discussion/browser/comment.py:58
+#: plone.app.discussion/plone/app/discussion/browser/comment.py:59
 msgid "edit_comment_form_title"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:11
+msgid "edit_rules"
 msgstr ""
 
 #. Default: "Cookies are not enabled. You must ${enable_cookies} before you can log in."
@@ -7420,7 +7520,7 @@ msgid "error_allowable_content_types"
 msgstr "El tipo MIME ${mimetype} no está permitido en ${name}, por favor corríjalo."
 
 #. Default: "This theme is already installed. Select 'Replace existing theme' and re-upload to replace it."
-#: plone/app/theming/browser/controlpanel.py:251
+#: plone/app/theming/browser/controlpanel.py:257
 msgid "error_already_installed"
 msgstr "Este tema ya está instalado. Seleccione 'Reemplazar tema actual' y súbalo de nuevo para reemplazarlo."
 
@@ -7430,7 +7530,7 @@ msgid "error_expiration_must_be_after_effective_date"
 msgstr ""
 
 #. Default: "Please ensure you enter one expression per line, in the format <name> = <expression>."
-#: plone/app/theming/browser/controlpanel.py:172
+#: plone/app/theming/browser/controlpanel.py:178
 msgid "error_invalid_parameter_expressions"
 msgstr "Por favor, asegúrese de introducir una expresión por línea, en el formato <nombre> = <expresión>."
 
@@ -7440,12 +7540,12 @@ msgid "error_invalid_publication"
 msgstr ""
 
 #. Default: "The uploaded file is not a valid Zip archive"
-#: plone/app/theming/browser/controlpanel.py:228
+#: plone/app/theming/browser/controlpanel.py:234
 msgid "error_invalid_zip"
 msgstr "Al archivo subido no es un archivo Zip válido"
 
 #. Default: "The uploaded file does not contain a valid theme archive."
-#: plone/app/theming/browser/controlpanel.py:239
+#: plone/app/theming/browser/controlpanel.py:245
 msgid "error_no_rules_file"
 msgstr "El archivo subido no contiene un archivo válido de tema."
 
@@ -7458,6 +7558,14 @@ msgstr "${name} requerido, por favor corríjalo."
 #: Archetypes/Field.py:425
 msgid "error_vocabulary"
 msgstr "Los valores ${val} no están permitidos en el vocabulario del elemento ${label}."
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:139
+msgid "except"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:62
+msgid "exclude"
+msgstr ""
 
 #. Default: "Exclude from navigation"
 #: plone.app.content/plone/app/content/browser/contents/templates/properties.pt:28
@@ -7479,7 +7587,22 @@ msgstr ""
 msgid "field_edit_error_values_and_name"
 msgstr ""
 
-#: CMFPlone/browser/templates/search.pt:281
+#. Default: "Keep existing file"
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/file_input.pt:57
+msgid "file_keep"
+msgstr "Mantener archivo existente"
+
+#. Default: "Remove existing file"
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/file_input.pt:70
+msgid "file_remove"
+msgstr "Eliminar archivo existente"
+
+#. Default: "Replace with new file"
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/file_input.pt:82
+msgid "file_replace"
+msgstr "Reemplazar con un nuevo archivo"
+
+#: CMFPlone/browser/templates/search.pt:283
 #: plone.app.querystring/plone/app/querystring/results.pt:71
 msgid "filed under:"
 msgstr "archivado en:"
@@ -7593,6 +7716,16 @@ msgstr "Autor"
 msgid "heading_contact_form"
 msgstr "Formulario de contacto"
 
+#. Default: "Browse for items"
+#: plone.formwidget.contenttree/plone/formwidget/contenttree/input.pt:10
+msgid "heading_contenttree_browse"
+msgstr "Examinar elementos"
+
+#. Default: "Press Ctrl to select multiple items."
+#: plone.formwidget.contenttree/plone/formwidget/contenttree/input.pt:11
+msgid "heading_contenttree_help"
+msgstr "Presione Ctrl para seleccionar múltiples elementos"
+
 #. Default: "Use cookie for manual override"
 #: CMFPlone/interfaces/controlpanel.py:239
 msgid "heading_cookie_manual_override"
@@ -7604,7 +7737,7 @@ msgid "heading_create_group"
 msgstr "Crear un Grupo"
 
 #. Default: "Sharing for ${folder}"
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:30
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:35
 msgid "heading_currently_assigned_shares"
 msgstr "Compartición de ${folder}"
 
@@ -7700,7 +7833,7 @@ msgid "heading_language_settings"
 msgstr "Configuración de Idioma"
 
 #. Default: "Search for users"
-#: plone.app.users/plone/app/users/browser/membersearch.py:90
+#: plone.app.users/plone/app/users/browser/membersearch.py:89
 msgid "heading_member_search"
 msgstr "Buscar por usuarios"
 
@@ -7867,7 +8000,7 @@ msgid "heading_syndication_properties"
 msgstr "Propiedades de la Sindicación"
 
 #. Default: "Theme settings"
-#: plone/app/theming/browser/controlpanel.pt:71
+#: plone/app/theming/browser/controlpanel.pt:72
 msgid "heading_theme_settings"
 msgstr "Configuración del tema"
 
@@ -7939,7 +8072,7 @@ msgid "heading_zope_server"
 msgstr "Servidor Zope"
 
 #. Default: "If your theme uses relative paths for images, stylesheets or other resources, you can enter a prefix here to make sure these resources will work regardless of which page Plone is rendering."
-#: plone/app/theming/browser/controlpanel.pt:394
+#: plone/app/theming/browser/controlpanel.pt:395
 msgid "help_absolute_prefix"
 msgstr "Si su tema usa rutas relativas para las imágenes, hojas de estilos u otros recursos, puede introducir aquí un prefijo para garantizar que estos recursos funcionarán independientemente de la página que Plone esté mostrando."
 
@@ -7977,12 +8110,12 @@ msgid "help_always_show_selector"
 msgstr "help_always_show_selector"
 
 #. Default: "If selected, anonymous users are able to post comments without loggin in. It is highly recommended to use a captcha solution to prevent spam if this setting is enabled."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:214
+#: plone.app.discussion/plone/app/discussion/interfaces.py:213
 msgid "help_anonymous_comments"
 msgstr "Si está seleccionado, los usuarios anónimos podrán añadir comentarios sin tener que iniciar una sesión. Recomendamos encarecidamente que utilice una solución Captcha para evitar el spam si esta opción está activada."
 
 #. Default: "If selected, anonymous user will have to give their email."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:228
+#: plone.app.discussion/plone/app/discussion/interfaces.py:227
 msgid "help_anonymous_email_enabled"
 msgstr "Si es seleccionado, los usuarios anónimos tendrán que dar su correo electrónico."
 
@@ -8018,9 +8151,14 @@ msgid "help_capslock_password"
 msgstr "Sensible a la capitalización, asegúrese de que la tecla de mayúsculas no está habilitada"
 
 #. Default: "Use this setting to enable or disable Captcha validation for comments. Install plone.formwidget.captcha, plone.formwidget.recaptcha, collective.akismet, or collective.z3cform.norobots if there are no options available."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:297
+#: plone.app.discussion/plone/app/discussion/interfaces.py:296
 msgid "help_captcha"
 msgstr "Utilice esta opción para activar o desactivar Captcha para los comentarios. Instale plone.formwidget.captcha, plone.formwidget.recaptcha, collective.akismet o collective.z3cform.norobots si no tiene ninguna opción disponible."
+
+#. Default: "Enter a comment that describes the changes you made. If versioning is manual, you must set a change note to create the new version."
+#: plone.app.versioningbehavior/plone/app/versioningbehavior/behaviors.py:25
+msgid "help_change_note"
+msgstr "Introduzca un comentario que describa los cambios realizados."
 
 #. Default: "Select the transition to be used for modifying the items state."
 #: plone.app.content/plone/app/content/browser/contents/templates/workflow.pt:8
@@ -8034,7 +8172,7 @@ msgid "help_checkin_message"
 msgstr "Introduzca el mensaje a guardar junto con la nueva versión. Este debería explicar los cambios realizados a efectos de auditoría."
 
 #. Default: "Select the folder to checkout to."
-#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:36
+#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:47
 msgid "help_checkout_folder"
 msgstr "Seleccione la carpeta en la que retirar la versión."
 
@@ -8119,8 +8257,8 @@ msgstr "El inicio del rango de fechas de búsqueda"
 msgid "help_default_icon"
 msgstr "Icono a utilizar para las acciones sin icono específico. Una imagen de 16x16 píxeles."
 
-#. Default: "If selected, supports deleting of own comments for users with the 'Delete own comments' permission."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:269
+#. Default: "If selected, supports deleting of own comments for users with the \"Delete own comments\" permission."
+#: plone.app.discussion/plone/app/discussion/interfaces.py:268
 msgid "help_delete_own_comment_enabled"
 msgstr ""
 
@@ -8139,7 +8277,7 @@ msgstr ""
 "Para activar el workflow de moderación de comentarios, vaya al Panel de Control de Tipos, elija 'Comentario' y elija el 'Workflow de Moderación de Comentarios'."
 
 #. Default: "You can specify a Doctype string which will be set on the output, for example \"&lt;!DOCTYPE html&gt;\". If left blank the default XHTML 1.0 transistional Doctype or that set in the Diazo theme is used."
-#: plone/app/theming/browser/controlpanel.pt:419
+#: plone/app/theming/browser/controlpanel.pt:420
 msgid "help_doctype"
 msgstr "Puede especificar una cadena Doctype, que será establecida en la salida, por ejemplo \"&lt;!DOCTYPE html&gt;\". Si se deja en blanco, se usará por defecto el Doctype XHTML 1.0 de transición, o el establecido en el tema Diazo."
 
@@ -8148,8 +8286,8 @@ msgstr "Puede especificar una cadena Doctype, que será establecida en la salida
 msgid "help_duplicate_login_names"
 msgstr "Al cambiar la configuración de inicio de sesión con correo electrónico en ${link} automáticamente se cambiará el nombre de inicio de sesión para los usuarios actuales. Esto puede fallar si hay duplicados. En esta página puede buscar duplicados."
 
-#. Default: "If selected, supports editing of comments for users with the 'Edit comments' permission."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:258
+#. Default: "If selected, supports editing of comments for users with the \"Edit comments\" permission."
+#: plone.app.discussion/plone/app/discussion/interfaces.py:257
 msgid "help_edit_comment_enabled"
 msgstr ""
 
@@ -8171,12 +8309,12 @@ msgid "help_email_creation_for_login"
 msgstr "Introduzca una dirección de correo. Esta será su nombre de inicio de sesión. Respetamos su privacidad, por lo que su dirección no será proporcionada a terceras partes o expuesta en modo alguno."
 
 #. Default: "Select this option to enable the newly created theme immediately."
-#: plone/app/theming/browser/controlpanel.pt:232
+#: plone/app/theming/browser/controlpanel.pt:233
 msgid "help_enable_immediately"
 msgstr "Seleccione esta opción para habilitar el tema recién creado de forma inmediata."
 
 #. Default: "Select this option to enable the newly uploaded theme immediately."
-#: plone/app/theming/browser/controlpanel.pt:735
+#: plone/app/theming/browser/controlpanel.pt:736
 msgid "help_enable_new_theme"
 msgstr "Seleccione esta opción para habilitar el tema recién subido de forma inmediata."
 
@@ -8196,7 +8334,7 @@ msgid "help_event_settings"
 msgstr "Configuración relacionada con la Fecha y Hora como las zonas horarias, etc."
 
 #. Default: "If selected, this item will not appear in the navigation tree"
-#: plone.app.dexterity/plone/app/dexterity/behaviors/exclfromnav.py:28
+#: plone.app.dexterity/plone/app/dexterity/behaviors/exclfromnav.py:57
 msgid "help_exclude_from_nav"
 msgstr "Si está marcado, este elemento no aparecerá en el árbol de navegación"
 
@@ -8208,7 +8346,7 @@ msgid "help_expiration_date"
 msgstr "La fecha en la que expira el documento. Esto hará automáticamente el documento invisible a otros a una fecha dada. Si no elije ninguna fecha, nunca expirará."
 
 #. Default: "If enabled all external links in the content region open in a new window."
-#: plone/app/theming/browser/controlpanel.pt:573
+#: plone/app/theming/browser/controlpanel.pt:574
 msgid "help_ext_links_open_new_window"
 msgstr "Si está habilitado, todos los enlaces externos del área de contenido se abrirán en una nueva ventana."
 
@@ -8229,7 +8367,7 @@ msgid "help_full_name_creation"
 msgstr "Introduzca su nombre completo, por ejemplo José Pérez."
 
 #. Default: "If selected, users are able to post comments on the site. Though, you have to enable comments for specific content types, folders or content objects before users will be able to post comments."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:200
+#: plone.app.discussion/plone/app/discussion/interfaces.py:199
 msgid "help_globally_enabled"
 msgstr "Si está seleccionado, se permite que los visitantes hagan comentarios en la web. Sin embargo, tiene que activar los comentarios para cada tipo de objeto específicamente antes de que se puedan añadir los comentarios."
 
@@ -8245,7 +8383,7 @@ msgid "help_homepage"
 msgstr "El URL para su página personal externa, si tiene una."
 
 #. Default: "If there are hostnames that you do not want to be themed, you can list them here, one per line. This is useful during theme development, so that you can compare the themed and unthemed sites. In some cases, you may also want to provided an unthemed host alias for content administrators to be able to use 'plain' Plone."
-#: plone/app/theming/browser/controlpanel.pt:460
+#: plone/app/theming/browser/controlpanel.pt:461
 msgid "help_hostname_blacklist"
 msgstr "Si hay nombres de equipos en los que no quiere utilizar temas, puede enumerarlos aquí, uno por línea. Esto es útil durante el desarrollo de temas, de modo que pueda comparar sitios con y sin tema. En algunos casos, es posible que también desee proporcionar un alias de equipo sin tema para que los administradores de contenido pueda utilizar un Plone 'de serie'."
 
@@ -8266,7 +8404,7 @@ msgid "help_inherit_criteria"
 msgstr "Reducir los resultados de búsqueda de las Carpetas Inteligentes padre usando el criterio de esta Carpeta Inteligente."
 
 #. Default: "By default, permissions from the container of this item are inherited. If you disable this, only the explicitly defined sharing permissions will be valid. In the overview, the symbol ${image_confirm_icon} indicates an inherited value. Similarly, the symbol ${image_link_icon} indicates a global role, which is managed by the site administrator."
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:162
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:170
 msgid "help_inherit_local_roles"
 msgstr "Por defecto, los permisos del contenedor de este elemento son heredados. Si deshabilita este comportamiento, sólo los permisos de compartición explícitamente definidos serán válidos. En la visión general, el símbolo ${image_confirm_icon} indica un valor heredado. De forma similar, el símbolo ${image_link_icon} indica un rol global, el cual es gestionado por el administrador del sitio."
 
@@ -8300,7 +8438,7 @@ msgid "help_login_name_caps"
 msgstr "Los nombres de usuario y las contraseñas son sensibles a la capitalización, asegúrese que la tecla de bloqueo de mayúsculas ('caps lock') no está activada."
 
 #. Default: "If enabled all external links will be marked with link type specific icons."
-#: plone/app/theming/browser/controlpanel.pt:558
+#: plone/app/theming/browser/controlpanel.pt:559
 msgid "help_mark_special_links"
 msgstr "Si está habilitado, todos los enlaces externos serán marcados con iconos específicos según el tipo de enlace."
 
@@ -8309,18 +8447,19 @@ msgstr "Si está habilitado, todos los enlaces externos serán marcados con icon
 msgid "help_message"
 msgstr "Por favor, introduzca el mensaje que desea enviar."
 
-#. Default: "If selected, comments will enter a 'Pending' state in which they are invisible to the public. A user with the 'Review comments' permission ('Reviewer' or 'Manager') can approve comments to make them visible to the public. If you want to enable a custom comment workflow, you have to go to the types control panel."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:241
+#. Default: "If selected, comments will enter a \"Pending\" state in which they are invisible to the public. A user with the \"Review comments\" permission (\"Reviewer\" or \"Manager\") can approve comments to make them visible to the public. If you want to enable a custom comment workflow, you have to go to the types control panel."
+#: plone.app.discussion/plone/app/discussion/interfaces.py:240
+#, fuzzy
 msgid "help_moderation_enabled"
 msgstr "Si está seleccionado, los comentarios entraran en un estado 'Pendiente' en el cual ellos no son visibles para el público. Un usuario con el permiso 'Revisar comentarios' ('Revisor' o 'Administrador') puede aprobar los comentarios y hacerlos visibles al público. Si desea habilitar un workflow de comentarios diferente, puede hacerlo a través de la opción 'Configuración de Tipos' en el panel de control."
 
 #. Default: "Address to which moderator notifications will be sent."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:338
+#: plone.app.discussion/plone/app/discussion/interfaces.py:337
 msgid "help_moderator_email"
 msgstr "La dirección de correo electrónico a la cual se enviarán las notificaciones de moderación."
 
 #. Default: "If selected, the moderator is notified if a comment needs attention. The moderator email address can be set below."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:324
+#: plone.app.discussion/plone/app/discussion/interfaces.py:323
 msgid "help_moderator_notification_enabled"
 msgstr "Si está seleccionado, se notifica al moderador cuando un nuevo comentario requiere de su atención. La dirección de correo electrónico del moderador se puede encontrar en la opción 'Configuración de correo' del panel de control (Dirección del remitente del sitio)"
 
@@ -8357,12 +8496,12 @@ msgid "help_new_password"
 msgstr "Introduzca su nueva contraseña."
 
 #. Default: "You may also provide a longer description for your theme."
-#: plone/app/theming/browser/controlpanel.pt:213
+#: plone/app/theming/browser/controlpanel.pt:214
 msgid "help_new_theme_description"
 msgstr "También puede proporcionar una descripción más larga para su tema."
 
 #. Default: "Enter a short, descriptive title for your theme"
-#: plone/app/theming/browser/controlpanel.pt:197
+#: plone/app/theming/browser/controlpanel.pt:198
 msgid "help_new_theme_title"
 msgstr "Introduzca un título corto y descriptivo para su tema"
 
@@ -8387,7 +8526,7 @@ msgid "help_openid_identity_url"
 msgstr "Por favor, escriba su URL OpenID a continuación para iniciar la sesión."
 
 #. Default: "You can define parameters that will be passed to the compiled theme here. In your rules file, you can refer to a parameter by <code>$name</code>. Parameters are defined using TALES expressions, which should evaluate to a string, a number, a boolean or None. Available variables are <code>context</code>, <code>request</code>, <code>portal</code>, <code>portal_state</code>, and <code>context_state</code>. Define one variable per line, in the format <code>name = expression</code>."
-#: plone/app/theming/browser/controlpanel.pt:490
+#: plone/app/theming/browser/controlpanel.pt:491
 msgid "help_parameter_expressions"
 msgstr "Puede definir aquí los parámetros que serán pasados al tema compilado. En su archivo de reglas, puede hacer referencia a un parámetro mediante <code>$name</code>. Los parámetros se definen utilizando expresiones TALES, que deben evaluarse como cadena, número, booleano o None. Las variables disponibles son <code>context</code>, <code>request</code>, <code>portal</code>, <code>portal_state</code>, y <code>context_state</code>. Defina una variable por línea, con el formato <code>nombre = expresión</code>."
 
@@ -8440,7 +8579,7 @@ msgid "help_publishing_comments"
 msgstr "Introduzca una breve descripción o algunos comentarios que serán agregados al histórico de la publicación. Si selecciona múltiples elementos, este comentario será adjuntado a todos ellos."
 
 #. Default: "Allow rules and themes to be read from remote servers."
-#: plone/app/theming/browser/controlpanel.pt:447
+#: plone/app/theming/browser/controlpanel.pt:448
 msgid "help_read_network"
 msgstr "Permitir que las reglas y temas sean leídos de servidores remotos."
 
@@ -8473,7 +8612,7 @@ msgid "help_render_body"
 msgstr "Si un elemento dispone de texto de cuerpo, lo muestra. En otro caso usa su descripción."
 
 #. Default: "Select this option to replace any existing theme that may have been uploaded previously."
-#: plone/app/theming/browser/controlpanel.pt:749
+#: plone/app/theming/browser/controlpanel.pt:750
 msgid "help_replace_existing"
 msgstr "Seleccione esta opción para reemplazar cualquier tema existente que haya sido subido previamente."
 
@@ -8483,22 +8622,25 @@ msgid "help_robots_txt"
 msgstr "robots.txt es leído por motores de búsqueda para determinar cómo indexar su sitio. Para más detalles, vea <a href='http://www.robotstxt.org'>http://www.robotstxt.org</a>. '{portal_url}' será replazado por el URL del sitio."
 
 #. Default: "Enter a path or URL for the theme rules file."
-#: plone/app/theming/browser/controlpanel.pt:372
+#: plone/app/theming/browser/controlpanel.pt:373
 msgid "help_rules"
 msgstr "Introduzca una ruta o URL para el archivo de reglas del tema."
 
-#. Default: "Find users whose email addresses contain."
+#. Default: "Find users whose email address contain"
 #: plone.app.users/plone/app/users/browser/membersearch.py:31
+#, fuzzy
 msgid "help_search_email"
 msgstr "Busca usuarios cuyas direcciones de correo contengan."
 
-#. Default: "Return users with full names containing this value."
-#: plone.app.users/plone/app/users/browser/membersearch.py:39
+#. Default: "Find users whose full names contain"
+#: plone.app.users/plone/app/users/browser/membersearch.py:38
+#, fuzzy
 msgid "help_search_fullname"
 msgstr "Devuelve los usuarios cuyo nombre completo contiene este valor."
 
-#. Default: "Find users whose login names contain."
+#. Default: "Find users whose login name contain"
 #: plone.app.users/plone/app/users/browser/membersearch.py:24
+#, fuzzy
 msgid "help_search_name"
 msgstr "Busca usuarios cuyos nombres de inicio de sesión contengan."
 
@@ -8538,12 +8680,12 @@ msgid "help_sender_fullname"
 msgstr "Por favor, introduzca su nombre y apellidos."
 
 #. Default: "go here"
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:20
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:25
 msgid "help_sharing_go_here"
 msgstr "ir aquí"
 
 #. Default: "You are adjusting the sharing privileges for a default view in a container. To adjust them for the entire container, ${go_here}."
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:20
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:25
 msgid "help_sharing_page_default_page"
 msgstr "Está ajustando los privilegios de compartición para una vista por defecto en un contenedor. Para ajustarlos para todo el contenedor, ${go_here}."
 
@@ -8558,7 +8700,7 @@ msgid "help_shortname"
 msgstr "No debe contener espacios, guiones bajos, o mezcla de mayúsculas y minúsculas. El Nombre Corto es parte de la dirección web del elemento. "
 
 #. Default: "If selected, an image of the user is shown next to the comment."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:313
+#: plone.app.discussion/plone/app/discussion/interfaces.py:312
 msgid "help_show_commenter_image"
 msgstr "Si está seleccionado, se mostrará una imagen del autor junto al comentario."
 
@@ -8613,23 +8755,24 @@ msgstr "Las etiquetas suelen utilizarse para la organización a medida del conte
 msgid "help_template_mixin"
 msgstr "Escoja una plantilla para la visualización de este elemento."
 
-#. Default: "Use this setting to choose if the comment text should be transformed in any way. You can choose between 'Plain text' and 'Intelligent text'. 'Intelligent text' converts plain text into HTML where line breaks and indentation is preserved, and web and email addresses are made into clickable links."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:280
+#. Default: "Use this setting to choose if the comment text should be transformed in any way. You can choose between \"Plain text\" and \"Intelligent text\". \"Intelligent text\" converts plain text into HTML where line breaks and indentation is preserved, and web and email addresses are made into clickable links."
+#: plone.app.discussion/plone/app/discussion/interfaces.py:279
+#, fuzzy
 msgid "help_text_transform"
 msgstr "Elija si el texto de los comentario será transformado de algún modo. Puede seleccionar entre 'Texto plano' y 'Texto inteligente'. 'Texto inteligente' convierte el texto plano en HTML, conservando los cambios de línea y la indentación, y transformando las direcciones web y de correo electrónico en vínculos."
 
 #. Default: "Select a file to upload."
-#: plone/app/theming/browser/controlpanel.pt:713
+#: plone/app/theming/browser/controlpanel.pt:714
 msgid "help_theme_archive"
 msgstr "Seleccione un archivo a subir."
 
 #. Default: "The theme base defines a collection of templates and other resources that makes up the raw content to which a theme is applied. Most Diazo themes will assume the default theme base, so only change this if you know what you are doing."
-#: plone/app/theming/browser/controlpanel.pt:531
+#: plone/app/theming/browser/controlpanel.pt:532
 msgid "help_theme_base"
 msgstr "El tema base define una colección de plantillas y otros recursos que constituyen el contenido en crudo al que un tema es aplicado. La mayoría de los temas Diazo asumirán el tema base, de modo que modifique esto sólo si sabe lo que está haciendo."
 
 #. Default: "If enabled the currently configured Diazo theme (if any) will be applied."
-#: plone/app/theming/browser/controlpanel.pt:359
+#: plone/app/theming/browser/controlpanel.pt:360
 msgid "help_theme_enabled"
 msgstr "Si está habilitado, el tema Diazo actualmente configurado (de haberlo) será aplicado."
 
@@ -8680,7 +8823,7 @@ msgid "help_user_name_creation_casesensitive"
 msgstr "Introduzca el nombre de usuario que desee utilizar. Generalmente algo como \"jperez\" o \"jose_perez\". No están permitidos caracteres especiales o espacios en el nombre de usuario. Los nombres de usuario y las contraseñas son sensibles a mayúsculas y minúsculas, asegúrese que la tecla de bloqueo de mayúsculas no está activada ('caps lock'). Este es el nombre que utilizará para identificarse."
 
 #. Default: "If selected, users can choose to be notified of new comments by email."
-#: plone.app.discussion/plone/app/discussion/interfaces.py:350
+#: plone.app.discussion/plone/app/discussion/interfaces.py:349
 msgid "help_user_notification_enabled"
 msgstr "Si está seleccionado, los usuarios pueden solicitar recibir avisos por correo cuando haya nuevos comentarios."
 
@@ -8731,9 +8874,32 @@ msgstr "HTML"
 msgid "if_all_conditions_met"
 msgstr "Si todas las siguientes condiciones se cumplen:"
 
+#. Default: "Keep existing image"
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/image_input.pt:61
+msgid "image_keep"
+msgstr "Mantener imagen existente"
+
+#. Default: "Remove existing image"
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/image_input.pt:74
+msgid "image_remove"
+msgstr "Eliminar imagen existente"
+
+#. Default: "Replace with new image"
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/image_input.pt:86
+msgid "image_replace"
+msgstr "Reemplazar con una nueva imagen"
+
 #: plone.app.textfield/plone/app/textfield/interfaces.py:33
 msgid "in characters"
 msgstr "en caracteres"
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:61
+msgid "include"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:56
+msgid "including"
+msgstr ""
 
 #. Default: "Your dashboard is currently empty. Click the <em>edit</em> tab to assign some personal portlets."
 #: plone.app.layout/plone/app/layout/dashboard/dashboard.py:32
@@ -8745,6 +8911,11 @@ msgstr "Su cuadro de mando actualmente está vacío. Haga clic en la pestaña <e
 #: plone.app.openid/plone/app/openid/skins/ploneopenid/login_form.cpt:105
 msgid "info_openid"
 msgstr "¿Qué es OpenID?"
+
+#. Default: "Initial version"
+#: plone.app.versioningbehavior/plone/app/versioningbehavior/subscribers.py:84
+msgid "initial_version_changeNote"
+msgstr "Versión inicial"
 
 #: validation/validators/BaseValidators.py:19
 msgid "is not a decimal number."
@@ -8779,7 +8950,7 @@ msgid "is not an integer."
 msgstr "no es un entero."
 
 #. Default: "Absolute path prefix"
-#: plone/app/theming/browser/controlpanel.pt:393
+#: plone/app/theming/browser/controlpanel.pt:394
 msgid "label_absolute_prefix"
 msgstr "Prefijo de ruta absoluta"
 
@@ -8801,7 +8972,7 @@ msgid "label_add"
 msgstr "Agregar"
 
 #. Default: "Add comment"
-#: plone.app.discussion/plone/app/discussion/browser/comments.pt:194
+#: plone.app.discussion/plone/app/discussion/browser/comments.pt:195
 msgid "label_add_comment"
 msgstr ""
 
@@ -8898,17 +9069,17 @@ msgstr "un usuario anónimo"
 
 #. Default: "Anonymous"
 #: plone.app.discussion/plone/app/discussion/browser/comments.pt:76
-#: plone.app.discussion/plone/app/discussion/comment.py:179
+#: plone.app.discussion/plone/app/discussion/comment.py:174
 msgid "label_anonymous"
 msgstr "Anónimo"
 
 #. Default: "Enable anonymous comments"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:212
+#: plone.app.discussion/plone/app/discussion/interfaces.py:211
 msgid "label_anonymous_comments"
 msgstr "Permitir comentarios anónimos"
 
 #. Default: "Enable anonymous email field"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:226
+#: plone.app.discussion/plone/app/discussion/interfaces.py:225
 msgid "label_anonymous_email_enabled"
 msgstr "Habilitar campo de correo electrónico anónimo"
 
@@ -8989,7 +9160,7 @@ msgid "label_boolean_field"
 msgstr "Booleano"
 
 #. Default: "by ${author}"
-#: CMFPlone/browser/templates/search.pt:246
+#: CMFPlone/browser/templates/search.pt:248
 #: CMFPlone/skins/plone_content/folder_listing.pt:129
 #: CMFPlone/skins/plone_content/folder_summary_view.pt:74
 msgid "label_by_author"
@@ -9008,7 +9179,7 @@ msgid "label_cant_mail_password_reset"
 msgstr "Normalmente, le ofrecemos enviar un correo al usuario con instrucciones sobre cómo establecer una contraseña tras completar este formulario. Sin embargo, este sitio no tiene una configuración de correo válida. Puede corregir esto en la Configuración de correo."
 
 #. Default: "Captcha"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:295
+#: plone.app.discussion/plone/app/discussion/interfaces.py:294
 msgid "label_captcha"
 msgstr "Captcha"
 
@@ -9028,6 +9199,11 @@ msgid "label_change_item"
 msgstr ""
 "Cambiar el elemento de contenido\n"
 " como vista por defecto…"
+
+#. Default: "Change Note"
+#: plone.app.versioningbehavior/plone/app/versioningbehavior/behaviors.py:24
+msgid "label_change_note"
+msgstr "Comentario acerca del cambio"
 
 #. Default: "Change Password"
 #: CMFPlone/skins/plone_login/login_password.cpt:103
@@ -9063,7 +9239,7 @@ msgid "label_checkin_message"
 msgstr "Mensaje para Nueva Versión"
 
 #. Default: "Checkout Folder"
-#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:33
+#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:44
 msgid "label_checkout_folder"
 msgstr "Carpeta de Retirada de versiones"
 
@@ -9108,12 +9284,12 @@ msgstr "Haga clic aquí para ver la imagen a tamaño completo…"
 
 #. Default: "Comment"
 #: CMFPlone/browser/interfaces.py:335
-#: plone.app.discussion/plone/app/discussion/interfaces.py:161
+#: plone.app.discussion/plone/app/discussion/interfaces.py:160
 msgid "label_comment"
 msgstr "Comentario"
 
 #. Default: "Commenting has been disabled."
-#: plone.app.discussion/plone/app/discussion/browser/comments.pt:171
+#: plone.app.discussion/plone/app/discussion/browser/comments.pt:172
 msgid "label_commenting_disabled"
 msgstr "Los comentarios han sido inhabilitados."
 
@@ -9214,6 +9390,21 @@ msgstr "sin asignar"
 #: plone.app.contentrules/plone/app/contentrules/browser/templates/manage-assignments.pt:143
 msgid "label_contentrules_subfolders"
 msgstr "¿Se aplica a las subcarpetas?"
+
+#. Default: "Add"
+#: plone.formwidget.contenttree/plone/formwidget/contenttree/input.pt:19
+msgid "label_contenttree_add"
+msgstr "Agregar"
+
+#. Default: "browse..."
+#: plone.formwidget.contenttree/plone/formwidget/contenttree/widget.py:261
+msgid "label_contenttree_browse"
+msgstr "Examinar…"
+
+#. Default: "Cancel"
+#: plone.formwidget.contenttree/plone/formwidget/contenttree/input.pt:19
+msgid "label_contenttree_cancel"
+msgstr "Cancelar"
 
 #. Default: "Contributors"
 #: Archetypes/ExtensibleMetadata.py:113
@@ -9354,7 +9545,7 @@ msgid "label_delete"
 msgstr "Eliminar"
 
 #. Default: "Enable deleting own comments"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:267
+#: plone.app.discussion/plone/app/discussion/interfaces.py:266
 msgid "label_delete_own_comment_enabled"
 msgstr ""
 
@@ -9397,19 +9588,19 @@ msgid "label_display_flags"
 msgstr "Mostrar banderas para el idioma"
 
 #. Default: "Doctype"
-#: plone/app/theming/browser/controlpanel.pt:418
+#: plone/app/theming/browser/controlpanel.pt:419
 msgid "label_doctype"
 msgstr "Doctype"
 
 #. Default: "Edit"
 #: CMFPlone/browser/templates/author.pt:85
 #: plone.app.contentrules/plone/app/contentrules/browser/templates/manage-elements.pt:58
-#: plone.app.discussion/plone/app/discussion/browser/comments.pt:131
+#: plone.app.discussion/plone/app/discussion/browser/comments.pt:132
 msgid "label_edit"
 msgstr "Editar"
 
 #. Default: "Enable editing of comments"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:256
+#: plone.app.discussion/plone/app/discussion/interfaces.py:255
 msgid "label_edit_comment_enabled"
 msgstr ""
 
@@ -9451,12 +9642,12 @@ msgid "label_enable_cookies"
 msgstr "habilitar cookies"
 
 #. Default: "Immediately enable new theme"
-#: plone/app/theming/browser/controlpanel.pt:231
+#: plone/app/theming/browser/controlpanel.pt:232
 msgid "label_enable_immediately"
 msgstr "Habilitar un nuevo tema de forma inmediata"
 
 #. Default: "Immediately enable new theme"
-#: plone/app/theming/browser/controlpanel.pt:734
+#: plone/app/theming/browser/controlpanel.pt:735
 msgid "label_enable_new_theme"
 msgstr "Habilitar nuevo tema de forma inmediata"
 
@@ -9541,7 +9732,7 @@ msgid "label_exception_value"
 msgstr "Valor de la Excepción"
 
 #. Default: "Exclude from navigation"
-#: plone.app.dexterity/plone/app/dexterity/behaviors/exclfromnav.py:24
+#: plone.app.dexterity/plone/app/dexterity/behaviors/exclfromnav.py:53
 msgid "label_exclude_from_nav"
 msgstr "Excluir de la navegación"
 
@@ -9558,7 +9749,7 @@ msgid "label_expiration_date"
 msgstr "Fecha de Terminación"
 
 #. Default: "External links open in new window"
-#: plone/app/theming/browser/controlpanel.pt:572
+#: plone/app/theming/browser/controlpanel.pt:573
 msgid "label_ext_links_open_new_window"
 msgstr "Los enlaces externos se abren en una nueva ventana"
 
@@ -9605,12 +9796,12 @@ msgid "label_full_name"
 msgstr "Nombre Completo"
 
 #. Default: "Full Name"
-#: plone.app.users/plone/app/users/browser/membersearch.py:38
+#: plone.app.users/plone/app/users/browser/membersearch.py:37
 msgid "label_fullname"
 msgstr "Nombre Completo"
 
 #. Default: "Globally enable comments"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:198
+#: plone.app.discussion/plone/app/discussion/interfaces.py:197
 msgid "label_globally_enabled"
 msgstr "Activar comentarios de forma global"
 
@@ -9690,7 +9881,7 @@ msgid "label_homepage"
 msgstr "Página personal"
 
 #. Default: "Unthemed host names"
-#: plone/app/theming/browser/controlpanel.pt:459
+#: plone/app/theming/browser/controlpanel.pt:460
 msgid "label_hostname_blacklist"
 msgstr "Nombres de equipos sin tema"
 
@@ -9732,7 +9923,7 @@ msgid "label_inherit_criteria"
 msgstr "Herencia de Criterios"
 
 #. Default: "Inherit permissions from higher levels"
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:151
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:159
 msgid "label_inherit_local_roles"
 msgstr "Heredar permisos de niveles superiores"
 
@@ -9859,7 +10050,7 @@ msgid "label_manage_portlets_default_view_container_go_here"
 msgstr "ir aquí"
 
 #. Default: "Mark special links"
-#: plone/app/theming/browser/controlpanel.pt:557
+#: plone/app/theming/browser/controlpanel.pt:558
 msgid "label_mark_special_links"
 msgstr "Señalar enlaces especiales"
 
@@ -9876,17 +10067,17 @@ msgid "label_message"
 msgstr "Mensaje"
 
 #. Default: "Enable comment moderation"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:237
+#: plone.app.discussion/plone/app/discussion/interfaces.py:236
 msgid "label_moderation_enabled"
 msgstr "Habilitar la moderación de comentarios"
 
 #. Default: "Moderator Email Address"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:334
+#: plone.app.discussion/plone/app/discussion/interfaces.py:333
 msgid "label_moderator_email"
 msgstr "Dirección de correo electrónico del moderador"
 
 #. Default: "Enable moderator email notification"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:322
+#: plone.app.discussion/plone/app/discussion/interfaces.py:321
 msgid "label_moderator_notification_enabled"
 msgstr "Activar notificación al moderador"
 
@@ -9903,7 +10094,7 @@ msgstr "Selección múltiple"
 #. Default: "Name"
 #: CMFPlone/controlpanel/browser/usergroups_groupdetails.pt:28
 #: plone.app.users/plone/app/users/browser/membersearch.py:23
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:77
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:82
 msgid "label_name"
 msgstr "Nombre"
 
@@ -9950,12 +10141,12 @@ msgid "label_new_short_name"
 msgstr "Nuevo Nombre Corto"
 
 #. Default: "Description"
-#: plone/app/theming/browser/controlpanel.pt:212
+#: plone/app/theming/browser/controlpanel.pt:213
 msgid "label_new_theme_description"
 msgstr "Descripción"
 
 #. Default: "Title"
-#: plone/app/theming/browser/controlpanel.pt:196
+#: plone/app/theming/browser/controlpanel.pt:197
 msgid "label_new_theme_title"
 msgstr "Título"
 
@@ -9975,7 +10166,7 @@ msgid "label_next"
 msgstr "Siguiente"
 
 #. Default: "Next: ${itemtitle}"
-#: plone.app.layout/plone/app/layout/nextprevious/nextprevious.pt:40
+#: plone.app.layout/plone/app/layout/nextprevious/nextprevious.pt:37
 msgid "label_next_item"
 msgstr "Siguiente: ${itemtitle}"
 
@@ -10046,7 +10237,7 @@ msgid "label_or"
 msgstr "o"
 
 #. Default: "Parameter expressions"
-#: plone/app/theming/browser/controlpanel.pt:489
+#: plone/app/theming/browser/controlpanel.pt:490
 msgid "label_parameter_expressions"
 msgstr "Expresiones de parámetro"
 
@@ -10194,7 +10385,7 @@ msgid "label_quick_search"
 msgstr "Búsqueda rápida"
 
 #. Default: "Read network"
-#: plone/app/theming/browser/controlpanel.pt:446
+#: plone/app/theming/browser/controlpanel.pt:447
 msgid "label_read_network"
 msgstr "Leer de la red"
 
@@ -10247,12 +10438,12 @@ msgid "label_remove_selected_users"
 msgstr "Eliminar grupos / usuarios seleccionados"
 
 #. Default: "Replace existing theme"
-#: plone/app/theming/browser/controlpanel.pt:748
+#: plone/app/theming/browser/controlpanel.pt:749
 msgid "label_replace_existing"
 msgstr "Reemplazar tema existente"
 
 #. Default: "Reply"
-#: plone.app.discussion/plone/app/discussion/browser/comments.pt:162
+#: plone.app.discussion/plone/app/discussion/browser/comments.pt:163
 msgid "label_reply"
 msgstr ""
 
@@ -10283,7 +10474,7 @@ msgid "label_rule_event_trigger"
 msgstr "Disparador de evento: ${trigger}"
 
 #. Default: "Rules file"
-#: plone/app/theming/browser/controlpanel.pt:371
+#: plone/app/theming/browser/controlpanel.pt:372
 msgid "label_rules"
 msgstr "Archivo de reglas"
 
@@ -10312,6 +10503,11 @@ msgstr ""
 #. Default: "Dates"
 #: plone.app.dexterity/plone/app/dexterity/behaviors/metadata.py:140
 msgid "label_schema_dates"
+msgstr ""
+
+#. Default: "Default"
+#: plone.dexterity/plone/dexterity/browser/base.py:16
+msgid "label_schema_default"
 msgstr ""
 
 #. Default: "Ownership"
@@ -10417,7 +10613,7 @@ msgid "label_show_batched"
 msgstr "Mostrar en tandas"
 
 #. Default: "Show commenter image"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:311
+#: plone.app.discussion/plone/app/discussion/interfaces.py:310
 msgid "label_show_commenter_image"
 msgstr "Mostrar imagen del autor"
 
@@ -10522,7 +10718,7 @@ msgstr "Valor"
 
 #. Default: "Subject"
 #: CMFPlone/browser/interfaces.py:363
-#: plone.app.discussion/plone/app/discussion/interfaces.py:156
+#: plone.app.discussion/plone/app/discussion/interfaces.py:155
 msgid "label_subject"
 msgstr "Asunto"
 
@@ -10559,7 +10755,7 @@ msgid "label_text_format"
 msgstr "Formato de Texto"
 
 #. Default: "Comment text transform"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:278
+#: plone.app.discussion/plone/app/discussion/interfaces.py:277
 msgid "label_text_transform"
 msgstr "Transformaciones aplicadas al texto del comentario"
 
@@ -10569,12 +10765,12 @@ msgid "label_textline_field"
 msgstr "Línea de texto (cadena de caracteres)"
 
 #. Default: "Theme base"
-#: plone/app/theming/browser/controlpanel.pt:529
+#: plone/app/theming/browser/controlpanel.pt:530
 msgid "label_theme_base"
 msgstr "Tema base"
 
 #. Default: "Theme enabled"
-#: plone/app/theming/browser/controlpanel.pt:358
+#: plone/app/theming/browser/controlpanel.pt:359
 msgid "label_theme_enabled"
 msgstr "Tema habilitado"
 
@@ -10656,12 +10852,11 @@ msgstr "Subir a Visión General de Grupos"
 
 #. Default: "Up to Site Setup"
 #: CMFPlone/controlpanel/browser/maintenance.pt:166
-#: plone/app/theming/browser/controlpanel.pt:74
 msgid "label_up_to_plone_setup"
 msgstr "Subir a Configuración de Plone"
 
 #. Default: "Back to the control panel"
-#: plone/app/theming/browser/mapper.pt:96
+#: plone/app/theming/browser/mapper.pt:97
 msgid "label_up_to_theming_controlpanel"
 msgstr "Volver al panel de control"
 
@@ -10691,7 +10886,7 @@ msgid "label_user_name"
 msgstr "Nombre del Usuario"
 
 #. Default: "Enable user email notification"
-#: plone.app.discussion/plone/app/discussion/interfaces.py:346
+#: plone.app.discussion/plone/app/discussion/interfaces.py:345
 msgid "label_user_notification_enabled"
 msgstr "Activar notificación de correo a los usuarios"
 
@@ -10770,7 +10965,7 @@ msgid "legend_add_new"
 msgstr "Agregar nuevo"
 
 #. Default: "Details"
-#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:29
+#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:40
 msgid "legend_details"
 msgstr "Detalles"
 
@@ -10972,8 +11167,13 @@ msgstr "Debido a que la autenticación basada en cookie esté deshabilitada, el 
 msgid "login_portlet_disabled"
 msgstr "Autenticación mediante cookies deshabilitada. El portlet de inicio de sesión no está disponible."
 
-#. Default: "A comment on '${title}' has been posted here: ${link}\n\n---\n${text}\n---\n"
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:117
+msgid "long_date_format"
+msgstr ""
+
+#. Default: "A comment on \"${title}\" has been posted here: ${link}\n\n---\n${text}\n---\n"
 #: plone.app.discussion/plone/app/discussion/comment.py:47
+#, fuzzy
 msgid "mail_notification_message"
 msgstr ""
 "Se ha agregado un comentario a ${title} aquí: ${link}\n"
@@ -10982,8 +11182,9 @@ msgstr ""
 "${text}\n"
 "---\n"
 
-#. Default: "A comment on '${title}' has been posted here: ${link}\n\n---\n${text}\n---\n\nApprove comment:\n${link_approve}\n\nDelete comment:\n${link_delete}\n"
+#. Default: "A comment on \"${title}\" has been posted here: ${link}\n\n---\n${text}\n---\n\nApprove comment:\n${link_approve}\n\nDelete comment:\n${link_delete}\n"
 #: plone.app.discussion/plone/app/discussion/comment.py:55
+#, fuzzy
 msgid "mail_notification_message_moderator"
 msgstr ""
 "Se ha agregado un comentario a '${title}' aquí: ${link}\n"
@@ -11073,6 +11274,54 @@ msgstr "migrar los tipos de contenido por defecto a Dexterity."
 msgid "migration-section in the documentation of plone.app.contenttypes"
 msgstr "la sección de migración en la documentación de plone.app.contenttypes"
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:27
+msgid "monthly_day_of_month_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:28
+msgid "monthly_day_of_month_1_human"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:29
+msgid "monthly_day_of_month_2"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:30
+msgid "monthly_day_of_month_3"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:31
+msgid "monthly_day_of_month_4"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:25
+msgid "monthly_interval_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:26
+msgid "monthly_interval_2"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:36
+msgid "monthly_repeat_on"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:32
+msgid "monthly_weekday_of_month_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:33
+msgid "monthly_weekday_of_month_1_human"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:34
+msgid "monthly_weekday_of_month_2"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:35
+msgid "monthly_weekday_of_month_3"
+msgstr ""
+
 #. Default: "More…"
 #: plone.portlet.collection/plone/portlet/collection/collection.pt:57
 msgid "more_url"
@@ -11098,6 +11347,10 @@ msgstr "Debe establecer una contraseña o elegir que le sea enviado un correo."
 msgid "msg_text_too_long"
 msgstr "El texto es demasiado largo. (Máximo ${max} caracteres.)"
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:121
+msgid "multiple_day_of_month"
+msgstr ""
+
 #. Default: "Filter the results"
 #: CMFPlone/browser/templates/search.pt:66
 msgid "narrow_search_options"
@@ -11117,6 +11370,40 @@ msgstr "No"
 #: plone.app.layout/plone/app/layout/viewlets/review_history.pt:59
 msgid "no_comments"
 msgstr "No hay comentarios."
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:128
+msgid "no_end_after_n_occurrences"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:125
+msgid "no_end_date"
+msgstr ""
+
+#. Default: "No file"
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/file_display.pt:39
+msgid "no_file"
+msgstr "Ningún archivo"
+
+#. Default: "No image"
+#: plone.formwidget.namedfile/plone/formwidget/namedfile/image_display.pt:31
+msgid "no_image"
+msgstr "Ninguna imagen"
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:124
+msgid "no_repeat_every"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:126
+msgid "no_repeat_on"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:123
+msgid "no_rule"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:120
+msgid "no_template_match"
+msgstr ""
 
 #. Default: "Keep existing file"
 #: Archetypes/skins/archetypes/widgets/file.pt:68
@@ -11142,6 +11429,26 @@ msgstr "o"
 msgid "or_upload_a_file"
 msgstr "o suba un archivo (el contenido existente será reemplazado)"
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:65
+msgid "order_indexes_first"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:68
+msgid "order_indexes_fourth"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:69
+msgid "order_indexes_last"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:66
+msgid "order_indexes_second"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:67
+msgid "order_indexes_third"
+msgstr ""
+
 #. Default: "Parameter expressions"
 #: plone/app/theming/interfaces.py:145
 msgid "parameter_expressions"
@@ -11152,10 +11459,24 @@ msgstr "Expresiones de parámetro"
 msgid "parameter_expressions_description"
 msgstr "Puede definir aquí los parámetros que serán pasados al tema compilado. En su archivo de reglas, puede hacer referencia a un parámetro mediante $name. Los parámetros se definen utilizando expresiones TALES, que deben evaluarse como cadena, número, booleano o None. Las variables disponibles son `context`, `request`, `portal`, `portal_state`, y `context_state`."
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:127
+msgid "past_end_date"
+msgstr ""
+
 #. Default: "pending"
 #: workflow state defined in plone_workflow - title Pending
 msgid "pending"
 msgstr "pendiente"
+
+#. Default: "mmmm d, yyyy"
+#: plone.app.widgets/plone/app/widgets/utils.py:68
+msgid "pickadate_date_format"
+msgstr "d !de mmmm !de yyyy"
+
+#. Default: "h:i a"
+#: plone.app.widgets/plone/app/widgets/utils.py:81
+msgid "pickadate_time_format"
+msgstr ""
 
 #. Default: "Plain Text"
 #: Archetypes/skins/archetypes/wysiwyg_support.pt:49
@@ -11167,8 +11488,20 @@ msgstr "Texto Plano"
 msgid "plone.app.collection"
 msgstr "plone.app.collection"
 
-#: plone.app.iterate/plone/app/iterate/configure.zcml:32
+#: plone.app.iterate/plone/app/iterate/configure.zcml:45
 msgid "plone.app.iterate: Test fixture"
+msgstr ""
+
+#: plone.formwidget.datetime/plone/formwidget/datetime/configure.zcml:25
+msgid "plone.formwidget.datetime default profile"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/configure.zcml:20
+msgid "plone.formwidget.recurrence"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/configure.zcml:20
+msgid "plone.formwidget.recurrence resource registration."
 msgstr ""
 
 #: plone.protect/plone/protect/configure.zcml:31
@@ -11176,7 +11509,7 @@ msgid "plone.protect configuration"
 msgstr ""
 
 #. Default: "Static Portlet"
-#: plone.portlet.static/plone/portlet/static/static.py:89
+#: plone.portlet.static/plone/portlet/static/static.py:99
 msgid "portlet_static"
 msgstr "Portlet Estático"
 
@@ -11194,6 +11527,10 @@ msgstr "No bloquear"
 #: plone.app.portlets/plone/app/portlets/browser/templates/edit-manager-contextual.pt:78
 msgid "portlets_value_use_parent"
 msgstr "Utilizar configuración de elemento superior"
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:16
+msgid "preview"
+msgstr ""
 
 #. Default: "private"
 #: workflow state defined in folder_workflow - title Private
@@ -11218,6 +11555,34 @@ msgstr "publicar"
 msgid "published"
 msgstr "publicado"
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:49
+msgid "range"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:54
+msgid "range_by_end_date"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:55
+msgid "range_by_end_date_human"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:51
+msgid "range_by_occurrences_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:52
+msgid "range_by_occurrences_1_human"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:53
+msgid "range_by_occurrences_2"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:50
+msgid "range_no_end"
+msgstr ""
+
 #. Default: "Read network"
 #: plone/app/theming/interfaces.py:119
 msgid "readNetwork"
@@ -11229,6 +11594,18 @@ msgstr "Leer de la red"
 #: plone.app.collection/plone/app/collection/browser/templates/summary_view.pt:52
 msgid "read_more"
 msgstr "Leer Más"
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:59
+msgid "recurrence_start"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:18
+msgid "recurrence_type"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:14
+msgid "refresh"
+msgstr ""
 
 #. Default: "Cookie authentication has been disabled."
 #: CMFPlone/skins/plone_login/registered.pt:13
@@ -11248,6 +11625,10 @@ msgstr "relevancia"
 #: CMFPlone/skins/plone_login/failsafe_login_form.cpt:166
 msgid "remember_to_log_out"
 msgstr "No olvide cerrar su sesión o salir de su navegador cuando haya terminado."
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:63
+msgid "remove"
+msgstr ""
 
 #. Default: "The following users have been sent an e-mail with link to reset their password: ${user_ids}"
 #: CMFPlone/controlpanel/browser/usergroups_usersoverview.py:194
@@ -11279,6 +11660,10 @@ msgstr "Archivo de reglas"
 #: plone/app/theming/interfaces.py:101
 msgid "rules_file_path"
 msgstr "Ruta del archivo de reglas"
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:58
+msgid "save"
+msgstr ""
 
 #. Default: "Select Prefix"
 #: plone.app.registry/plone/app/registry/browser/records.pt:62
@@ -11338,7 +11723,7 @@ msgid "summary_affected_content"
 msgstr "Contenido afectado"
 
 #. Default: "Current sharing permissions"
-#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:67
+#: plone.app.workflow/plone/app/workflow/browser/sharing.pt:72
 msgid "summary_assigned_roles"
 msgstr "Permisos de compartición actuales"
 
@@ -11350,7 +11735,7 @@ msgstr "Lista el contenido escrito por un autor agrupado por el tipo de contenid
 #. Default: "Content listing"
 #: CMFPlone/skins/plone_content/folder_tabular_view.pt:17
 #: plone.app.content/plone/app/content/browser/table.pt:29
-#: plone.app.contenttypes/plone/app/contenttypes/browser/templates/listing_tabular.pt:26
+#: plone.app.contenttypes/plone/app/contenttypes/browser/templates/listing_tabular.pt:27
 msgid "summary_content_listing"
 msgstr "Listado de contenido"
 
@@ -11392,6 +11777,7 @@ msgstr "Seleccionar todos los ${count} elementos de esta carpeta."
 #. Default: "Home"
 #: plone.app.layout/plone/app/layout/viewlets/path_bar.pt:9
 #: plone.app.portlets/plone/app/portlets/portlets/navigation.pt:33
+#: plone.app.widgets/plone/app/widgets/utils.py:134
 msgid "tabs_home"
 msgstr "Inicio"
 
@@ -11404,6 +11790,30 @@ msgstr "Etiquetas a agregar"
 #: plone.app.content/plone/app/content/browser/contents/templates/tags.pt:2
 msgid "tags_to_remove"
 msgstr "Etiquetas a quitar"
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:131
+msgid "template_daily"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:132
+msgid "template_mondayfriday"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:135
+msgid "template_monthly"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:133
+msgid "template_weekdays"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:134
+msgid "template_weekly"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:136
+msgid "template_yearly"
+msgstr ""
 
 #: plone.app.iterate/plone/app/iterate/profiles/test/workflows/workingcopy_workflow/definition.xml
 msgid "test wc workflow"
@@ -11553,7 +11963,7 @@ msgid "text_search"
 msgstr "Buscar"
 
 #. Default: "Located in"
-#: CMFPlone/browser/templates/search.pt:299
+#: CMFPlone/browser/templates/search.pt:301
 msgid "text_searchitem_location"
 msgstr "Ubicado en"
 
@@ -11578,42 +11988,42 @@ msgid "text_zope_server_uptime"
 msgstr "Tiempo de funcionamiento del Servidor Zope: ${time}"
 
 #. Default: "Create copy of ${theme_name}"
-#: plone/app/theming/browser/controlpanel.pt:183
+#: plone/app/theming/browser/controlpanel.pt:184
 msgid "theming_controlpanel_copy_theme"
 msgstr "Crear copia de ${theme_name}"
 
 #. Default: "Are you sure you want to delete ${theme_name}"
-#: plone/app/theming/browser/controlpanel.pt:283
+#: plone/app/theming/browser/controlpanel.pt:284
 msgid "theming_controlpanel_delete_confirm"
 msgstr "Está seguro de que desea eliminar ${theme_name}"
 
 #. Default: "This operation cannot be undone. Note that filesystem themes cannot be deleted from within Plone."
-#: plone/app/theming/browser/controlpanel.pt:288
+#: plone/app/theming/browser/controlpanel.pt:289
 msgid "theming_controlpanel_delete_confirm_description"
 msgstr "Esta operación no puede deshacerse. Tenga en cuenta que los temas no pueden ser eliminados del sistema de archivos desde Plone."
 
 #. Default: "New theme"
-#: plone/app/theming/browser/controlpanel.pt:611
+#: plone/app/theming/browser/controlpanel.pt:612
 msgid "theming_controlpanel_new_theme"
 msgstr "Nuevo tema"
 
 #. Default: "Please enter the details of your new theme"
-#: plone/app/theming/browser/controlpanel.pt:186
+#: plone/app/theming/browser/controlpanel.pt:187
 msgid "theming_controlpanel_new_theme_description"
 msgstr "Por favor, introduzca los detalles de su nuevo tema"
 
 #. Default: "Upload theme"
-#: plone/app/theming/browser/controlpanel.pt:690
+#: plone/app/theming/browser/controlpanel.pt:691
 msgid "theming_controlpanel_upload"
 msgstr "Subir tema"
 
 #. Default: "This is a built-in theme, and cannot be edited."
-#: plone/app/theming/browser/mapper.pt:81
+#: plone/app/theming/browser/mapper.pt:82
 msgid "theming_mapper_warning_cannot_edit"
 msgstr "Este es un tema integrado, y no puede ser editado."
 
 #. Default: "This theme is currently active. Any changes made will be immediately reflected on the live site."
-#: plone/app/theming/browser/mapper.pt:73
+#: plone/app/theming/browser/mapper.pt:74
 msgid "theming_mapper_warning_live"
 msgstr "Este tema está actualmente activo. Cualquier cambio será reflejado en el sitio de forma inmediata."
 
@@ -11653,6 +12063,10 @@ msgstr ":"
 msgid "time_yesterday"
 msgstr "Ayer"
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:15
+msgid "title"
+msgstr ""
+
 #. Default: "Actions for the current content item"
 #: plone.app.contentmenu/plone/app/contentmenu/menu.py:47
 msgid "title_actions_menu"
@@ -11664,7 +12078,7 @@ msgid "title_add_new_items_inside_item"
 msgstr "Agregar nuevos elementos dentro de este elemento"
 
 #. Default: "Add static text portlet"
-#: plone.portlet.static/plone/portlet/static/static.py:167
+#: plone.portlet.static/plone/portlet/static/static.py:181
 msgid "title_add_static_portlet"
 msgstr "Agregar portlet de texto estático"
 
@@ -11737,7 +12151,7 @@ msgid "title_checkin"
 msgstr "Guardar nueva versión de ${object_title}"
 
 #. Default: "Check out ${object_title}"
-#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:18
+#: plone.app.iterate/plone/app/iterate/browser/checkout.pt:19
 msgid "title_checkout"
 msgstr "Retirar versión de ${object_title}"
 
@@ -11798,7 +12212,7 @@ msgid "title_edit_dashboard"
 msgstr "Editar su cuadro de mando"
 
 #. Default: "Edit static text portlet"
-#: plone.portlet.static/plone/portlet/static/static.py:184
+#: plone.portlet.static/plone/portlet/static/static.py:202
 msgid "title_edit_static_portlet"
 msgstr "Editar portlet de texto estático"
 
@@ -11841,7 +12255,7 @@ msgstr "Ir a siguiente elemento"
 #. Default: "Personal Information"
 #: CMFPlone/controlpanel/browser/usergroups_usermembership.pt:57
 #: plone.app.users/plone/app/users/browser/account-configlet.pt:32
-#: plone.app.users/plone/app/users/browser/account.py:260
+#: plone.app.users/plone/app/users/browser/account.py:262
 msgid "title_personal_information_form"
 msgstr "Información Personal"
 
@@ -11851,7 +12265,7 @@ msgid "title_portlet_blocked"
 msgstr "Bloqueado"
 
 #. Default: "Go to previous item"
-#: plone.app.layout/plone/app/layout/nextprevious/nextprevious.pt:18
+#: plone.app.layout/plone/app/layout/nextprevious/nextprevious.pt:20
 msgid "title_previous_item"
 msgstr "Ir a anterior elemento"
 
@@ -11905,7 +12319,7 @@ msgid "title_send_mail_to_user"
 msgstr "Enviar un correo a este usuario"
 
 #. Default: "Static text portlet"
-#: plone.portlet.static/plone/portlet/static/static.py:69
+#: plone.portlet.static/plone/portlet/static/static.py:79
 msgid "title_static_portlet"
 msgstr "Portlet de texto estático"
 
@@ -11930,7 +12344,7 @@ msgid "title_wcag"
 msgstr "Pautas de Accesibilidad para el Contenido Web"
 
 #. Default: "Click to view a live preview. Forms will be disabled in the preview."
-#: plone/app/theming/browser/controlpanel.pt:139
+#: plone/app/theming/browser/controlpanel.pt:140
 msgid "tooltip_theme_preview"
 msgstr "Haga clic para ver una vista preliminar en tiempo real. Los formularios estarán deshabilitados en la vista preliminar."
 
@@ -12013,6 +12427,10 @@ msgstr "Política de versionado:"
 msgid "types_controlpanel_warn_remap"
 msgstr "Cambiar el flujo de trabajo de un tipo puede tardar un rato, y ralentizar el sitio significativamente mientras que el contenido está siendo actualizado a la nueva configuración."
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:119
+msgid "unsupported_features"
+msgstr ""
+
 #. Default: "Replace with new file:"
 #: Archetypes/skins/archetypes/widgets/file.pt:99
 msgid "upload_file"
@@ -12078,6 +12496,22 @@ msgstr "Neutral respecto al idioma (por defecto para un sitio)"
 msgid "warning_contentrules_disabled"
 msgstr "Las reglas de contenido han sido deshabilitadas globalmente. No se ejecutarán las reglas asignadas hasta que sean rehabilitadas. Utilice el ${controlpanel_link} para habilitarlas de nuevo."
 
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:21
+msgid "weekly_interval_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:22
+msgid "weekly_interval_2"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:23
+msgid "weekly_weekdays"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:24
+msgid "weekly_weekdays_human"
+msgstr ""
+
 #. Default: "Policy..."
 #: plone.app.contentmenu/plone/app/contentmenu/menu.py:794
 msgid "workflow_policy"
@@ -12087,6 +12521,54 @@ msgstr "Política..."
 #: plone.app.iterate/plone/app/iterate/browser/info_baseline.pt:20
 msgid "working_copy_info"
 msgstr "Este elemento está siendo editado por ${creator} en ${working_copy} creado el ${created}."
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:39
+msgid "yearly_day_of_month_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:40
+msgid "yearly_day_of_month_1_human"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:41
+msgid "yearly_day_of_month_2"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:42
+msgid "yearly_day_of_month_3"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:37
+msgid "yearly_interval_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:38
+msgid "yearly_interval_2"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:48
+msgid "yearly_repeat_on"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:43
+msgid "yearly_weekday_of_month_1"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:44
+msgid "yearly_weekday_of_month_1_human"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:45
+msgid "yearly_weekday_of_month_2"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:46
+msgid "yearly_weekday_of_month_3"
+msgstr ""
+
+#: plone.formwidget.recurrence/plone/formwidget/recurrence/browser/i18n.py:47
+msgid "yearly_weekday_of_month_4"
+msgstr ""
 
 #. Default: "Yes"
 #: plone.app.content/plone/app/content/browser/contents/templates/properties.pt:32
